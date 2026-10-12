@@ -2,8 +2,8 @@
 <style>
 :where(.wpf-root){--b:#1447E6;--bd:#0A1E6B;--k:#070B16;--k2:#0D1326;--o:#FF6500;--w:#fff;--g:#F4F6FB;--t:#5A6378}
 .wpf-root,.wpf-root *,.wpf-root *:before,.wpf-root *:after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-.wpf-root{margin:0;background:var(--k);font-family:'DM Sans',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px)}
+html{scroll-behavior:smooth;overflow-x:clip}
+.wpf-root{margin:0 0 0 calc(50% - 50vw);width:100vw;max-width:100vw;overflow-x:clip;background:var(--k);font-family:'DM Sans',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px)}
 .wpf-root h1,.wpf-root h2,.wpf-root h3,.wpf-f{font-family:'Sora','DM Sans',sans-serif;margin:0;font-weight:800;letter-spacing:-.035em;line-height:1.1}
 :where(.wpf-root) a{text-decoration:none;color:inherit}
 .wpf-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 5vw;background:rgba(7,11,22,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
@@ -106,7 +106,7 @@ html{scroll-behavior:smooth}
 @media(max-width:860px){
 .wpf-burger{display:block}
 .wpf-menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--k);padding:14px 5vw 20px;display:none;border-bottom:1px solid rgba(255,255,255,.1)}.wpf-menu.open{display:flex}
-.wpf-hgrid,.wpf-g2,.wpf-ct,.wpf-case,.wpf-g3{grid-template-columns:1fr}
+.wpf-hgrid,.wpf-g2,.wpf-ct,.wpf-case,.wpf-g3{grid-template-columns:1fr!important}
 .wpf-stats{grid-template-columns:1fr 1fr}.wpf-sec{padding:70px 5vw}.wpf-pr.ft{transform:none}
 .wpf-case .wpf-ph{min-height:220px;border-right:0;border-bottom:2px dashed rgba(255,255,255,.2)}.wpf-cb{padding:28px}}
 </style>
@@ -125,11 +125,15 @@ html{scroll-behavior:smooth}
 <h1>Je transforme vos <em>publicités</em> en clients et en chiffre d'affaires.</h1>
 <p class="wpf-p" style="margin-top:24px">Expert Facebook et Instagram Ads, je pilote des campagnes de lead generation, d'e-commerce et d'infopreneuriat pour les marques d'Afrique francophone et d'ailleurs.</p>
 <div class="wpf-row"><a class="wpf-btn" href="#contact">Discuter de mon projet</a><a class="wpf-btn gh" href="#resultats">Voir les résultats</a></div></div>
-<div class="wpf-dc"><div><small>Coût par lead</small><b>1,2$</b><em>-62%</em></div><div><small>ROAS moyen</small><b>4,2x</b><em>+180%</em></div><div><small>Ventes générées</small><b>45 k$</b><em>+320%</em></div></div></div></header>
+<div class="wpf-ph">IMAGE : photo professionnelle de Dave (format vertical 4:5)</div></div></header>
 <div class="wpf-mq"><div><span>Meta Ads</span><span>Lead Generation</span><span>E-commerce</span><span>Infopreneuriat</span><span>Tracking &amp; Pixel</span><span>Scaling</span><span>Meta Ads</span><span>Lead Generation</span><span>E-commerce</span><span>Infopreneuriat</span><span>Tracking &amp; Pixel</span><span>Scaling</span></div></div>
 
-<section class="wpf-sec wpf-lt"><div class="wpf-bgl i2"></div><div class="wpf-in wpf-g2"><div class="wpf-rv"><span class="wpf-tag">Dave en bref</span><h2 class="wpf-h2">Media buyer à Cotonou, <em>clients dans le monde entier</em>.</h2><p class="wpf-p">Je conçois et pilote des campagnes Meta Ads pour des e-commerçants, des prestataires de services et des infopreneurs. Chaque campagne repose sur une stratégie claire et des chiffres suivis de près.</p><div class="wpf-row"><a class="wpf-btn" href="#a-propos">Découvrir mon parcours</a></div></div>
-<div class="wpf-g2" style="gap:18px"><div class="wpf-card wpf-rv"><div class="wpf-ic">◎</div><h3 style="font-size:20px">Lead Gen</h3><p>Prospects qualifiés</p></div><div class="wpf-card wpf-rv"><div class="wpf-ic">▣</div><h3 style="font-size:20px">E-commerce</h3><p>Ventes rentables</p></div><div class="wpf-card wpf-rv"><div class="wpf-ic">✦</div><h3 style="font-size:20px">Infopreneuriat</h3><p>Lancements gagnants</p></div><div class="wpf-card wpf-rv"><div class="wpf-ic">⌖</div><h3 style="font-size:20px">Tracking</h3><p>Données fiables</p></div></div></div></section>
+<section class="wpf-sec wpf-lt"><div class="wpf-bgl i5"></div><div class="wpf-in wpf-g2">
+<div class="wpf-ph wpf-rv" style="aspect-ratio:1">IMAGE : photo de vous au travail ou en situation</div>
+<div class="wpf-rv"><span class="wpf-tag">À propos</span><h2 class="wpf-h2">Dave, un media buyer qui parle <em>résultats</em>.</h2>
+<p class="wpf-p">Je m'appelle Dave, je suis media buyer basé à Cotonou. Mon rôle est simple : acheter de l'attention au meilleur prix et la convertir en prospects qualifiés et en ventes rentables. Chaque euro dépensé est suivi, mesuré et optimisé.</p>
+<p class="wpf-p" style="margin-top:16px">Je travaille avec des e-commerçants, des prestataires de services et des infopreneurs qui veulent une croissance stable, pas des coups de chance.</p>
+<ul class="wpf-ul"><li>Stratégie, création et ciblage des campagnes</li><li>Tracking précis et lecture claire des données</li><li>Rapports transparents et accompagnement continu</li></ul></div></div></section>
 
 <section class="wpf-sec"><div class="wpf-bg i3" style="opacity:.6"></div><div class="wpf-in">
 <span class="wpf-tag">En chiffres</span><h2 class="wpf-h2">La preuve par <em>les données</em>.</h2>
@@ -139,6 +143,13 @@ html{scroll-behavior:smooth}
 <div class="wpf-g4"><div class="wpf-card wpf-rv"><div class="wpf-ic">✕</div><h3 style="font-size:20px">Budget gaspillé</h3><p>Des campagnes sans stratégie qui brûlent votre budget en quelques jours.</p></div><div class="wpf-card wpf-rv"><div class="wpf-ic">✕</div><h3 style="font-size:20px">Leads non qualifiés</h3><p>Des contacts qui ne répondent pas et ne achètent jamais.</p></div><div class="wpf-card wpf-rv"><div class="wpf-ic">✕</div><h3 style="font-size:20px">Aucune visibilité</h3><p>Pas de tracking fiable, impossible de savoir ce qui marche vraiment.</p></div><div class="wpf-card wpf-rv"><div class="wpf-ic">✕</div><h3 style="font-size:20px">Compte bloqué</h3><p>Des restrictions et des refus de publicités qui freinent votre croissance.</p></div></div></div></section>
 
 <section class="wpf-sec"><div class="wpf-bg i5"></div><div class="wpf-in wpf-g2"><div class="wpf-rv"><span class="wpf-tag">La solution</span><h2 class="wpf-h2">Une acquisition <em>pilotée par les données</em>.</h2><p class="wpf-p">Je construis des campagnes Meta Ads qui s'appuient sur un tracking propre, des créatives testées et une optimisation continue. Résultat : un coût d'acquisition qui baisse et des ventes qui montent.</p><ul class="wpf-ul"><li>Tracking Pixel et API de conversion</li><li>Créatives pensées pour le marché africain et international</li><li>Décisions basées sur les chiffres, pas sur l'intuition</li></ul><div class="wpf-row"><a class="wpf-btn" href="#services">Découvrir mes services</a></div></div><div class="wpf-ph wpf-rv">IMAGE : capture d'un tableau de bord Ads Manager</div></div></section>
+
+<section class="wpf-sec wpf-lt"><div class="wpf-bgl i1"></div><div class="wpf-in wpf-g2"><div class="wpf-ph wpf-rv" style="aspect-ratio:1">IMAGE : photo de vous devant un écran de campagne</div><div><span class="wpf-tag">Compétences</span><h2 class="wpf-h2">Mon niveau, <em>en toute transparence</em>.</h2>
+<div class="wpf-bar wpf-rv" style="--w:95%"><div><span>Meta Ads (Facebook et Instagram)</span><span>95%</span></div><i></i></div>
+<div class="wpf-bar wpf-rv" style="--w:90%"><div><span>Lead Generation</span><span>90%</span></div><i></i></div>
+<div class="wpf-bar wpf-rv" style="--w:88%"><div><span>Publicité e-commerce</span><span>88%</span></div><i></i></div>
+<div class="wpf-bar wpf-rv" style="--w:85%"><div><span>Lancement infopreneuriat</span><span>85%</span></div><i></i></div>
+<div class="wpf-bar wpf-rv" style="--w:80%"><div><span>Tracking et analytics</span><span>80%</span></div><i></i></div></div></div></section>
 
 <section class="wpf-sec"><div class="wpf-bg i1"></div><div class="wpf-in"><div class="wpf-cx"><span class="wpf-tag">Ce que je fais</span><h2 class="wpf-h2">Trois domaines, <em>une expertise</em>.</h2><p class="wpf-p">Chaque secteur a ses propres règles. J'adapte la stratégie à votre modèle.</p></div>
 <div class="wpf-g3"><div class="wpf-card dk wpf-rv"><div class="wpf-ic">◎</div><h3>Lead Generation</h3><p>Des prospects qualifiés pour vos services et offres locales, à un coût maîtrisé.</p></div><div class="wpf-card dk wpf-rv"><div class="wpf-ic">▣</div><h3>E-commerce</h3><p>Des ventes rentables grâce à la conversion, au retargeting et au catalogue.</p></div><div class="wpf-card dk wpf-rv"><div class="wpf-ic">✦</div><h3>Infopreneuriat</h3><p>Des lancements de formations et d'ebooks qui convertissent dès le premier jour.</p></div></div>
