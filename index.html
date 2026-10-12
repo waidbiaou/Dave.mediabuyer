@@ -3,10 +3,10 @@
 :where(.wpf-root){--b:#1447E6;--bd:#0A1E6B;--k:#070B16;--k2:#0D1326;--o:#FF6500;--w:#fff;--g:#F4F6FB;--t:#5A6378}
 .wpf-root,.wpf-root *,.wpf-root *:before,.wpf-root *:after{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
-.wpf-root{margin:0 0 0 calc(50% - 50vw);width:100vw;max-width:100vw;overflow-x:clip;background:var(--k);font-family:'DM Sans',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px)}
+.wpf-root{margin:0;width:100%;overflow-x:clip;container-type:inline-size;container-name:wpfc;background:var(--k);font-family:'DM Sans',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px)}
 .wpf-root h1,.wpf-root h2,.wpf-root h3,.wpf-f{font-family:'Sora','DM Sans',sans-serif;margin:0;font-weight:800;letter-spacing:-.035em;line-height:1.1}
 :where(.wpf-root) a{text-decoration:none;color:inherit}
-.wpf-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 5vw;background:rgba(7,11,22,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.wpf-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 5cqw;background:rgba(7,11,22,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
 .wpf-logo{font-family:'Sora';font-weight:800;font-size:20px}.wpf-logo b{color:var(--o)}
 .wpf-menu{display:flex;gap:6px}
 .wpf-menu a{padding:9px 16px;border-radius:99px;font-size:14px;font-weight:500;color:#b9c2da;transition:.25s;cursor:pointer}
@@ -18,20 +18,20 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-btn.gh:hover{border-color:var(--o);color:var(--o)}
 .wpf-pg{display:none}.wpf-pg.on{display:block;animation:wpfIn .6s ease}
 @keyframes wpfIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.wpf-sec{padding:100px 5vw;position:relative;overflow:hidden}
+.wpf-sec{padding:100px 5cqw;position:relative;overflow:hidden}
 .wpf-in{max-width:1140px;margin:auto;position:relative;z-index:2}
 .wpf-lt{background:var(--w);color:var(--k)}.wpf-lt .wpf-p{color:var(--t)}
 .wpf-bl{background:linear-gradient(135deg,var(--bd),var(--b));color:#fff}
 .wpf-tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--o);margin-bottom:18px}
-.wpf-h2{font-size:clamp(32px,5vw,56px);margin-bottom:20px}.wpf-h2 em{font-style:normal;color:var(--o)}
+.wpf-h2{font-size:clamp(32px,5cqw,56px);margin-bottom:20px}.wpf-h2 em{font-style:normal;color:var(--o)}
 .wpf-p{font-size:17px;line-height:1.7;color:#b9c2da;max-width:640px;margin:0}
-.wpf-hero{min-height:88vh;display:flex;align-items:center;padding:80px 5vw;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 20%,rgba(20,71,230,.55),transparent 55%),var(--k)}
+.wpf-hero{min-height:88vh;display:flex;align-items:center;padding:80px 5cqw;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 20%,rgba(20,71,230,.55),transparent 55%),var(--k)}
 .wpf-bg,.wpf-bgl,.wpf-bgb{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center}
 .wpf-bg{background-image:linear-gradient(rgba(7,11,22,.86),rgba(7,11,22,.94)),var(--img)}
 .wpf-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;animation:wpfFl 9s ease-in-out infinite;z-index:1}
 @keyframes wpfFl{50%{transform:translate(30px,-40px)}}
 .wpf-hgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
-.wpf-hero h1{font-size:clamp(40px,7vw,84px)}.wpf-hero h1 em{font-style:normal;color:var(--o)}
+.wpf-hero h1{font-size:clamp(34px,7cqw,84px)}.wpf-hero h1 em{font-style:normal;color:var(--o)}
 .wpf-ph{aspect-ratio:4/5;border-radius:28px;border:2px dashed rgba(255,255,255,.28);background:linear-gradient(160deg,rgba(20,71,230,.35),rgba(255,101,0,.18));display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:14px;color:#cdd6f0;position:relative}
 .wpf-lt .wpf-ph{border-color:rgba(10,30,107,.3);color:var(--bd);background:linear-gradient(160deg,#E6ECFF,#FFE9DB)}
 .wpf-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
@@ -75,7 +75,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-fm input,.wpf-fm select,.wpf-fm textarea{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid #D9DFEE;font:inherit;font-size:15px;background:var(--g)}
 .wpf-fm input:focus,.wpf-fm select:focus,.wpf-fm textarea:focus{outline:0;border-color:var(--b);background:#fff}
 .wpf-fm .wpf-btn{width:100%;margin-top:22px}
-.wpf-ft{padding:30px 5vw;text-align:center;font-size:13px;color:#7d87a3;border-top:1px solid rgba(255,255,255,.08)}
+.wpf-ft{padding:30px 5cqw;text-align:center;font-size:13px;color:#7d87a3;border-top:1px solid rgba(255,255,255,.08)}
 .wpf-rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}.wpf-rv.in{opacity:1;transform:none}
 .wpf-bgl{background-image:linear-gradient(rgba(255,255,255,.9),rgba(244,246,251,.96)),var(--img)}
 .wpf-bgb{background-image:linear-gradient(135deg,rgba(10,30,107,.9),rgba(20,71,230,.84)),var(--img)}
@@ -100,13 +100,36 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-ba{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:46px}
 .wpf-ba .wpf-card h3{margin-top:0}.wpf-ba .bad{background:#FFF1E8;border-color:#FFD5BC}.wpf-ba .good{background:#EAF0FF;border-color:#C9D7FF}
 .wpf-pill{display:inline-block;padding:10px 18px;border-radius:99px;border:1px solid rgba(255,255,255,.2);margin:6px;font-weight:500;font-size:14px;transition:.3s}.wpf-pill:hover{background:var(--o);border-color:var(--o)}
-@media(max-width:860px){.wpf-g4{grid-template-columns:1fr 1fr}.wpf-lg{grid-template-columns:repeat(3,1fr)}.wpf-ba{grid-template-columns:1fr}.wpf-num{font-size:44px}}
-@media(max-width:860px){
+@container wpfc (max-width:860px){
 .wpf-burger{display:block}
-.wpf-menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--k);padding:14px 5vw 20px;display:none;border-bottom:1px solid rgba(255,255,255,.1)}.wpf-menu.open{display:flex}
-.wpf-hgrid,.wpf-g2,.wpf-ct,.wpf-case,.wpf-g3{grid-template-columns:1fr!important}
-.wpf-stats{grid-template-columns:1fr 1fr}.wpf-sec{padding:70px 5vw}.wpf-pr.ft{transform:none}
-.wpf-case .wpf-ph{min-height:220px;border-right:0;border-bottom:2px dashed rgba(255,255,255,.2)}.wpf-cb{padding:28px}}
+.wpf-menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--k);padding:14px 5cqw 20px;display:none;border-bottom:1px solid rgba(255,255,255,.1)}.wpf-menu.open{display:flex}
+.wpf-hgrid,.wpf-g2,.wpf-ct,.wpf-case,.wpf-g3,.wpf-ba{grid-template-columns:1fr!important}
+.wpf-g4{grid-template-columns:1fr 1fr}.wpf-lg{grid-template-columns:repeat(3,1fr)}.wpf-stats{grid-template-columns:1fr 1fr}
+.wpf-g2,.wpf-hgrid,.wpf-ct{gap:36px}
+.wpf-sec{padding:70px 5cqw}.wpf-sec[style*="padding-top"]{padding-top:100px!important}.wpf-pr.ft{transform:none}
+.wpf-num{font-size:44px}
+.wpf-case .wpf-ph{min-height:220px;border-right:0;border-bottom:2px dashed rgba(255,255,255,.2)}.wpf-cb{padding:28px}
+.wpf-g2>.wpf-ph,.wpf-hgrid>.wpf-ph{max-width:440px;width:100%;margin-inline:auto}
+.wpf-tag{display:block;text-align:center}.wpf-h2,.wpf-hero h1{text-align:center}
+.wpf-hero .wpf-in>div:first-child{text-align:center}.wpf-hero .wpf-p{margin-inline:auto}
+.wpf-row{justify-content:center}
+.wpf-card,.wpf-card *,.wpf-st,.wpf-st *,.wpf-cb,.wpf-cb *,.wpf-ti,.wpf-ti *,.wpf-ul,.wpf-ul li,.wpf-fq details,.wpf-fq details *,.wpf-g4>.wpf-rv,.wpf-g4>.wpf-rv *,.wpf-ln,.wpf-ln *,.wpf-bar,.wpf-bar *{text-align:left}
+}
+@container wpfc (max-width:560px){
+.wpf-g4{grid-template-columns:1fr}.wpf-lg{grid-template-columns:repeat(2,1fr)}
+.wpf-hero{min-height:auto;padding:64px 5cqw}
+.wpf-sec{padding:60px 5cqw}
+.wpf-card{padding:26px}.wpf-card h3{font-size:22px}
+.wpf-h2{margin-bottom:16px}.wpf-p{font-size:16px}
+.wpf-st{padding:20px}.wpf-st b{font-size:30px}
+.wpf-row .wpf-btn,.wpf-bn .wpf-btn{width:100%;text-align:center}
+.wpf-bn input{min-width:0;width:100%}
+.wpf-num{font-size:40px}
+.wpf-tl{padding-left:24px}.wpf-ti:before{left:-33px}.wpf-ti h3{font-size:22px}
+.wpf-kp{gap:20px}.wpf-kp b{font-size:28px}.wpf-cb h3{font-size:24px}
+.wpf-fm{padding:26px}.wpf-pr .am{font-size:34px}
+.wpf-mq div{font-size:16px}.wpf-ln{padding:16px}
+}
 </style>
 <div class="wpf-root">
 <nav class="wpf-nav"><a class="wpf-logo" href="#accueil">Dave<b>.</b></a>
@@ -281,6 +304,9 @@ M.querySelectorAll('a').forEach(function(a){a.classList.toggle('on',a.getAttribu
 M.classList.remove('open');window.scrollTo(0,0);
 document.querySelectorAll('#'+h+' .wpf-rv').forEach(function(r,i){r.style.transitionDelay=(i%4)*.08+'s';io.observe(r)})}
 window.addEventListener('hashchange',go);go();
+var R=document.querySelector('.wpf-root');
+function fit(){R.style.width='';R.style.marginLeft='';var vw=document.documentElement.clientWidth,r=R.getBoundingClientRect();if(vw<=700||r.width>=700){R.style.width=vw+'px';R.style.marginLeft=(-r.left)+'px'}}
+fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
 document.getElementById('wpfB').onclick=function(){M.classList.toggle('open')};
 document.getElementById('wpfSend').onclick=function(){var m='Bonjour, je suis '+document.getElementById('wpfN').value+'. Je cherche : '+document.getElementById('wpfS').value+'. '+document.getElementById('wpfT').value;window.open('https://wa.me/229XXXXXXXX?text='+encodeURIComponent(m),'_blank')}
 })();
