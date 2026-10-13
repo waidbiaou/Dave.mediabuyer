@@ -62,6 +62,55 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-fi.c3{top:30%;left:-2%;animation-delay:-1.5s}
 @keyframes wpfFl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @media (prefers-reduced-motion:reduce){.wpf-fc,.wpf-fi{animation:none}}
+/* METHODE */
+.wpf-mt{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:64px}
+.wpf-mt.wpf-rv{opacity:1;transform:none}
+.wpf-mln{position:absolute;top:28px;left:28px;width:calc(75% + 19.5px);height:2px;background:var(--ln);border-radius:2px}
+.wpf-mln i{display:block;height:100%;width:0;border-radius:2px;background:linear-gradient(90deg,var(--b),var(--o));transition:width 2s cubic-bezier(.4,0,.2,1) .3s}
+.wpf-mt.in .wpf-mln i{width:100%}
+.wpf-mt .st{position:relative;opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.wpf-mt.in .st{opacity:1;transform:none}
+.wpf-mt .nd{position:relative;z-index:2;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid var(--b);box-shadow:0 0 0 8px #fff;font-family:'Plus Jakarta Sans','DM Sans',sans-serif;font-weight:800;font-size:18px;color:var(--b);transition:background .5s,color .5s,box-shadow .5s}
+.wpf-mt.in .nd{background:var(--b);color:#fff;box-shadow:0 0 0 8px #fff,0 10px 24px rgba(20,71,230,.3)}
+.wpf-mt .cd{margin-top:26px;padding:28px 26px 30px;background:#fff;border:1px solid var(--ln);border-radius:24px;box-shadow:0 10px 30px rgba(10,30,107,.04);transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s,border-color .4s}
+.wpf-mt .st:hover .cd{transform:translateY(-6px);box-shadow:0 24px 46px rgba(20,71,230,.12);border-color:#C9D6FF}
+.wpf-mt .cd h3{font-size:22px;margin:0 0 10px}
+.wpf-mt .cd p{margin:0;color:var(--t);line-height:1.7;font-size:15.5px}
+.wpf-mt .st:nth-of-type(1){transition-delay:.2s}.wpf-mt .st:nth-of-type(1) .nd{transition-delay:.3s}
+.wpf-mt .st:nth-of-type(2){transition-delay:.7s}.wpf-mt .st:nth-of-type(2) .nd{transition-delay:.9s}
+.wpf-mt .st:nth-of-type(3){transition-delay:1.2s}.wpf-mt .st:nth-of-type(3) .nd{transition-delay:1.5s}
+.wpf-mt .st:nth-of-type(4){transition-delay:1.7s}.wpf-mt .st:nth-of-type(4) .nd{transition-delay:2.1s}
+.wpf-mt .st:hover{transition-delay:0s}
+.wpf-mf{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:56px;padding:34px 40px;border-radius:30px;background:linear-gradient(135deg,var(--bd),var(--b));color:#fff}
+.wpf-mf:after{content:"";position:absolute;right:-60px;top:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.08)}
+.wpf-mf>*{position:relative;z-index:1}
+.wpf-mf b{display:block;font-family:'Plus Jakarta Sans','DM Sans',sans-serif;font-weight:800;font-size:clamp(19px,2cqw,24px);letter-spacing:-.02em;margin-bottom:6px}
+.wpf-mf span{color:#C9D6FF;font-size:15px}
+/* CLIENTS ACCOMPAGNES */
+.wpf-cl{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px}
+.wpf-cc{position:relative;overflow:hidden;display:flex;flex-direction:column;padding:38px 32px 30px;border-radius:30px;background:#fff;border:1px solid var(--ln);box-shadow:0 10px 30px rgba(10,30,107,.04)}
+.wpf-cc.wpf-rv{transition:opacity .7s,transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .4s,border-color .4s}
+.wpf-cc:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--b),var(--o));transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.wpf-cc.wpf-rv.in:hover{transform:translateY(-8px);box-shadow:0 28px 56px rgba(20,71,230,.14);border-color:#C9D6FF}
+.wpf-cc:hover:before{transform:none}
+.wpf-cc .ic{position:relative;display:inline-flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:22px;background:linear-gradient(135deg,#3B6BFF,var(--b));color:#fff;box-shadow:0 14px 26px rgba(20,71,230,.28);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.wpf-cc.b .ic{background:linear-gradient(135deg,#FF8A3D,var(--o));box-shadow:0 14px 26px rgba(255,101,0,.3)}
+.wpf-cc.c .ic{background:linear-gradient(135deg,var(--b),var(--bd));box-shadow:0 14px 26px rgba(10,30,107,.3)}
+.wpf-cc:hover .ic{transform:rotate(-6deg) scale(1.08)}
+.wpf-cc .ic svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wpf-cc .wm{position:absolute;right:-22px;top:92px;pointer-events:none}
+.wpf-cc .wm svg{width:150px;height:150px;fill:none;stroke:#F0F3FA;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+.wpf-cc h3{position:relative;font-size:24px;margin:28px 0 12px}
+.wpf-cc p{position:relative;margin:0;color:var(--t);line-height:1.7;font-size:15.5px}
+.wpf-cc ul{position:relative;list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0}
+.wpf-cc li{padding:7px 13px;border-radius:99px;background:#F3F6FF;font-size:12.5px;font-weight:600;color:var(--bd)}
+.wpf-cc .rs{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:22px;border-top:1px solid var(--ln)}
+.wpf-cc ul+.rs{margin-top:28px}
+.wpf-cc .rs>span{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t);font-weight:700}
+.wpf-cc .rs div{text-align:right}
+.wpf-cc .rs b{display:block;font-family:'Plus Jakarta Sans','DM Sans',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.03em;color:var(--b);line-height:1}
+.wpf-cc .rs small{display:block;font-size:12px;color:var(--t);margin-top:4px}
+@media (prefers-reduced-motion:reduce){.wpf-mt .st,.wpf-cc{transition:none}.wpf-mt .st{opacity:1;transform:none}.wpf-mln i{width:100%;transition:none}.wpf-mt .nd{background:var(--b);color:#fff;transition:none}}
 /* NAV */
 .wpf-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:24px;padding:14px 5cqw;background:#fff;border-bottom:1px solid var(--ln)}
 .wpf-logo{display:flex;align-items:center;gap:12px;flex:none}
@@ -360,6 +409,24 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-sv>div{padding:32px 24px}.wpf-sv h3{font-size:26px;margin-top:30px}
 .wpf-lb span{display:none}
 }
+@container wpfc (max-width:1020px){
+.wpf-mt{grid-template-columns:1fr;gap:22px;margin-top:44px}
+.wpf-mln{top:28px;bottom:28px;left:27px;width:2px;height:auto}
+.wpf-mln i{width:100%;height:0;transition:height 2s cubic-bezier(.4,0,.2,1) .3s}
+.wpf-mt.in .wpf-mln i{height:100%}
+.wpf-mt .st{padding-left:80px}
+.wpf-mt .nd{position:absolute;left:0;top:0}
+.wpf-mt .cd{margin-top:0}
+.wpf-mt .st:nth-of-type(n){transition-delay:0s}
+.wpf-mt .st:nth-of-type(2){transition-delay:.5s}.wpf-mt .st:nth-of-type(3){transition-delay:.9s}.wpf-mt .st:nth-of-type(4){transition-delay:1.3s}
+.wpf-mt .st:nth-of-type(1) .nd{transition-delay:.2s}.wpf-mt .st:nth-of-type(2) .nd{transition-delay:.7s}.wpf-mt .st:nth-of-type(3) .nd{transition-delay:1.1s}.wpf-mt .st:nth-of-type(4) .nd{transition-delay:1.5s}
+}
+@container wpfc (max-width:860px){
+.wpf-cl{grid-template-columns:1fr;gap:20px;margin-top:40px}
+.wpf-cc{padding:32px 26px 26px}
+.wpf-mf{padding:28px 24px;text-align:center;justify-content:center}
+.wpf-mf .wpf-btn{width:100%;justify-content:center}
+}
 </style>
 
 <div class="wpf-root">
@@ -480,12 +547,14 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <section class="wpf-sec">
 <div class="wpf-in">
 <div class="wpf-hd"><span class="wpf-tag t-route">Ma méthode</span><h2 class="wpf-h2">De l'audit au scaling, <em>en 4 étapes</em>.</h2></div>
-<div class="wpf-g4">
-<div class="wpf-stp wpf-rv"><div class="num">01</div><h3>Audit</h3><p>Analyse de votre offre, de votre marché et de vos données existantes.</p></div>
-<div class="wpf-stp wpf-rv"><div class="num">02</div><h3>Stratégie</h3><p>Plan de campagne, audiences, tracking et créatives à produire.</p></div>
-<div class="wpf-stp wpf-rv"><div class="num">03</div><h3>Optimisation</h3><p>Tests, lecture des chiffres et ajustements quotidiens.</p></div>
-<div class="wpf-stp wpf-rv"><div class="num">04</div><h3>Scaling</h3><p>Augmentation progressive du budget sur les campagnes gagnantes.</p></div>
+<div class="wpf-mt wpf-rv">
+<span class="wpf-mln"><i></i></span>
+<div class="st"><span class="nd">01</span><div class="cd"><h3>Audit</h3><p>Analyse de votre offre, de votre marché et de vos données existantes.</p></div></div>
+<div class="st"><span class="nd">02</span><div class="cd"><h3>Stratégie</h3><p>Plan de campagne, audiences, tracking et créatives à produire.</p></div></div>
+<div class="st"><span class="nd">03</span><div class="cd"><h3>Optimisation</h3><p>Tests, lecture des chiffres et ajustements quotidiens.</p></div></div>
+<div class="st"><span class="nd">04</span><div class="cd"><h3>Scaling</h3><p>Augmentation progressive du budget sur les campagnes gagnantes.</p></div></div>
 </div>
+<div class="wpf-mf wpf-rv"><div><b>Un process clair, des décisions prises sur vos chiffres.</b><span>Chaque étape est documentée et partagée avec vous.</span></div><a class="wpf-btn wh" href="#contact">Parlons de votre projet</a></div>
 </div>
 </section>
 
@@ -547,12 +616,12 @@ html{scroll-behavior:smooth;overflow-x:clip}
 
 <!-- POUR QUI -->
 <section class="wpf-sec wpf-gr">
-<div class="wpf-in wpf-g2">
-<div class="wpf-rv"><span class="wpf-tag t-users">Clients accompagnés</span><h2 class="wpf-h2">Les profils que <em>j'accompagne</em>.</h2><p class="wpf-p">Je choisis des projets où je peux vraiment faire la différence, dans trois grands secteurs.</p></div>
-<div class="wpf-rv">
-<div class="wpf-card" style="margin-bottom:16px"><h3 style="font-size:20px">Infopreneurs</h3><p>Formations, ebooks, masterclass, programmes et communautés payantes.</p></div>
-<div class="wpf-card" style="margin-bottom:16px"><h3 style="font-size:20px">Commerçants et e-commerçants</h3><p>Boutiques en ligne, vendeurs sur WhatsApp et commerces locaux.</p></div>
-<div class="wpf-card"><h3 style="font-size:20px">Prestataires de services</h3><p>Coachs, cliniques, immobilier, formation, restauration.</p></div>
+<div class="wpf-in">
+<div class="wpf-hd wpf-rv"><span class="wpf-tag t-users">Clients accompagnés</span><h2 class="wpf-h2">Les profils que <em>j'accompagne</em>.</h2><p class="wpf-p">Je choisis des projets où je peux vraiment faire la différence, dans trois grands secteurs.</p></div>
+<div class="wpf-cl">
+<article class="wpf-cc a wpf-rv"><span class="wm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span><h3>Infopreneurs</h3><p>Formations, ebooks, masterclass, programmes et communautés payantes.</p><ul><li>Formations</li><li>Ebooks</li><li>Masterclass</li><li>Programmes</li><li>Communautés payantes</li></ul><div class="rs"><span>Résultat type</span><div><b>45 k$</b><small>de CA généré</small></div></div></article>
+<article class="wpf-cc b wpf-rv"><span class="wm"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span><h3>Commerçants et e-commerçants</h3><p>Boutiques en ligne, vendeurs sur WhatsApp et commerces locaux.</p><ul><li>Boutiques en ligne</li><li>Vendeurs WhatsApp</li><li>Commerces locaux</li></ul><div class="rs"><span>Résultat type</span><div><b>4,2x</b><small>ROAS</small></div></div></article>
+<article class="wpf-cc c wpf-rv"><span class="wm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><h3>Prestataires de services</h3><p>Coachs, cliniques, immobilier, formation, restauration.</p><ul><li>Coachs</li><li>Cliniques</li><li>Immobilier</li><li>Formation</li><li>Restauration</li></ul><div class="rs"><span>Résultat type</span><div><b>1,2 $</b><small>par lead</small></div></div></article>
 </div>
 </div>
 </section>
