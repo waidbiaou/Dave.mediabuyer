@@ -33,6 +33,32 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-tm .av{display:inline-flex;flex:none;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--bd),var(--b));color:#fff;align-items:center;justify-content:center}
 .wpf-tm .av{overflow:hidden}.wpf-tm .av img{display:block;width:100%;height:100%;object-fit:cover}
 .wpf-tm .av svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* HERO */
+.wpf-hero .wpf-in{position:relative;overflow:hidden;padding:60px 56px;border-radius:40px;background:radial-gradient(ellipse at 88% 12%,rgba(20,71,230,.16),transparent 52%),radial-gradient(ellipse at 6% 100%,rgba(255,101,0,.09),transparent 45%),linear-gradient(135deg,#F3F6FF,#FFFFFF 70%);border:1px solid var(--ln)}
+.wpf-hb{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:99px;background:#fff;border:1px solid var(--ln);box-shadow:0 6px 18px rgba(10,30,107,.06);font-size:12.5px;font-weight:700;color:var(--bd);margin-bottom:24px}
+.wpf-hb i{width:8px;height:8px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.18);flex:none}
+.wpf-hero .wpf-p{font-size:16.5px;max-width:500px}
+.wpf-hero .wpf-row{margin-top:30px}
+.wpf-hero .wpf-btn{box-shadow:0 12px 26px rgba(20,71,230,.22)}.wpf-hero .wpf-btn.gh{box-shadow:none}
+.wpf-hs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(10,30,107,.12)}
+.wpf-hs b{display:block;font-family:'Sora';font-size:clamp(20px,2cqw,26px);color:var(--b);letter-spacing:-.03em;margin-bottom:6px;white-space:nowrap}
+.wpf-hs span{display:block;font-size:12.5px;line-height:1.4;color:var(--t)}
+.wpf-hv{position:relative;width:100%;max-width:470px;margin-inline:auto;padding:14px}
+.wpf-hv:before{content:"";position:absolute;inset:-4%;border-radius:50%;background:radial-gradient(circle,rgba(20,71,230,.14),rgba(20,71,230,0) 68%)}
+.wpf-hph{position:relative;aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#0F1B2D;border:8px solid #fff;box-shadow:0 30px 60px rgba(10,30,107,.22)}
+.wpf-hph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 16%}
+.wpf-hr{position:absolute;inset:2px;border-radius:50%;border:3px solid transparent;border-top-color:var(--b);border-right-color:var(--o);transform:rotate(-24deg);opacity:.95}
+.wpf-fc{position:absolute;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;background:#fff;border-radius:18px;box-shadow:0 18px 40px rgba(10,30,107,.16);animation:wpfFl 6s ease-in-out infinite}
+.wpf-fc .ic{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:#EEF3FF;color:var(--b);flex:none}
+.wpf-fc.c2 .ic{background:#FFF1E8;color:var(--o)}
+.wpf-fc svg,.wpf-fi svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.wpf-fc b{display:block;font-family:'Sora';font-size:17px;letter-spacing:-.02em;line-height:1.1}
+.wpf-fc small{display:block;font-size:11.5px;color:var(--t);margin-top:3px}
+.wpf-fc.c1{top:12%;right:-4%}.wpf-fc.c2{bottom:12%;left:-6%;animation-delay:-3s}
+.wpf-fi{position:absolute;display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#fff;color:var(--b);box-shadow:0 14px 30px rgba(10,30,107,.16);animation:wpfFl 7s ease-in-out infinite}
+.wpf-fi.c3{top:30%;left:-2%;animation-delay:-1.5s}
+@keyframes wpfFl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){.wpf-fc,.wpf-fi{animation:none}}
 /* NAV */
 .wpf-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:24px;padding:14px 5cqw;background:#fff;border-bottom:1px solid var(--ln)}
 .wpf-logo{display:flex;align-items:center;gap:12px;flex:none}
@@ -93,12 +119,11 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-p{font-size:17px;line-height:1.75;color:var(--t);max-width:620px;margin:0}
 
 /* HERO */
-.wpf-hero{padding:0 5cqw 90px}
+.wpf-hero{padding:22px 5cqw 80px}
 .wpf-strip{display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid var(--ln);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--t);font-weight:500}
 .wpf-strip i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--o);margin-right:10px}
-.wpf-hgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center;padding-top:64px}
-.wpf-hero h1{font-size:clamp(36px,6cqw,82px);margin-bottom:28px}
-@container wpfc (min-width:861px){.wpf-hero h1{font-size:clamp(40px,5.4cqw,72px)}}
+.wpf-hgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.wpf-hero h1{font-size:clamp(30px,3.5cqw,46px);font-weight:800;line-height:1.14;margin-bottom:22px}
 .wpf-frame{padding:10px;background:var(--b);border-radius:36px}
 .wpf-frame.bl{background:var(--b)}
 .wpf-ph{position:relative;aspect-ratio:4/5;border-radius:26px;background:#EAF0FF;border:2px dashed #B9C9F5;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:14px;color:var(--bd);overflow:hidden}
@@ -311,13 +336,13 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-row{justify-content:center}
 .wpf-strip{justify-content:center;text-align:center}
 .wpf-cap{justify-content:center;gap:28px}
-.wpf-hgrid{gap:0}.wpf-hgrid>div:first-child{display:contents}.wpf-hgrid h1{order:1}.wpf-hgrid .wpf-p{order:2}.wpf-hgrid .wpf-frame{order:3;margin-top:36px}.wpf-hgrid .wpf-row{order:4;margin-top:32px}
+.wpf-hero .wpf-in{padding:38px 22px;border-radius:30px}.wpf-hgrid{gap:0}.wpf-ht{display:contents}.wpf-hb{order:0;width:fit-content;margin-inline:auto}.wpf-hgrid h1{order:1;font-size:clamp(28px,8.4cqw,42px)}.wpf-hgrid .wpf-p{order:2}.wpf-hv{order:3;margin-top:34px;max-width:380px}.wpf-hgrid .wpf-row{order:4;margin-top:32px}.wpf-hs{order:5;grid-template-columns:1fr 1fr;gap:22px 14px;margin-top:36px;text-align:center}.wpf-fc.c1{right:-2%}.wpf-fc.c2{left:-2%}.wpf-fi.c3{left:0}
 .wpf-ul{width:fit-content;margin-inline:auto}
 .wpf-card .wpf-ul{width:auto;margin-inline:0}
 }
 @container wpfc (max-width:560px){
 .wpf-g4{grid-template-columns:1fr}.wpf-tr{gap:14px}.wpf-sd{padding:12px;border-radius:26px}.wpf-pf{border-radius:18px}.wpf-pf img{inset:12px;width:calc(100% - 24px);height:calc(100% - 24px)}.wpf-km{gap:8px}.wpf-km div{padding:14px 10px}.wpf-km b{font-size:19px}.wpf-km span{font-size:10px;letter-spacing:.06em}.wpf-ar button{width:44px;height:44px}.wpf-ctl{gap:10px}
-.wpf-hero{padding-bottom:64px}.wpf-hgrid{padding-top:40px}
+.wpf-hero{padding:14px 4cqw 56px}.wpf-fc{padding:9px 14px 9px 9px}.wpf-fc .ic{width:34px;height:34px}.wpf-fc b{font-size:15px}.wpf-fi{width:44px;height:44px}
 .wpf-sec{padding:60px 5cqw}
 .wpf-card{padding:26px}.wpf-card h3{font-size:21px}
 .wpf-p{font-size:16px}
@@ -349,23 +374,27 @@ html{scroll-behavior:smooth;overflow-x:clip}
 
 <header class="wpf-hero">
 <div class="wpf-in">
-<div class="wpf-strip"><span>Media Buyer</span><span><i></i>Freelance · Disponible</span><span>Remote · International</span></div>
 <div class="wpf-hgrid">
-<div>
+<div class="wpf-ht">
+<span class="wpf-hb"><i></i>Media Buyer Meta Ads · Disponible en remote</span>
 <h1>Je transforme vos publicités en <em>clients</em> et en chiffre d'affaires.</h1>
 <p class="wpf-p">Media buyer spécialisé Meta Ads, je génère des leads pour les infopreneurs et des ventes pour les commerçants, en Afrique francophone et à l'international.</p>
-<div class="wpf-row"><a class="wpf-btn" href="#contact">Démarrer ↗</a><a class="wpf-btn gh" href="#resultats">Voir les résultats</a></div>
-</div>
-<div class="wpf-frame">
-<div class="wpf-ph has"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5a8d8a7b39.30259637_PR6.jpeg" alt="Dave, media buyer" fetchpriority="high"></div>
-</div>
-</div>
+<div class="wpf-row"><a class="wpf-btn" href="#contact">Démarrer un projet <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a><a class="wpf-btn gh" href="#resultats">Voir les résultats</a></div>
 <!-- CHIFFRES D'EXEMPLE : à remplacer par vos vrais chiffres -->
-<div class="wpf-sts">
+<div class="wpf-hs">
 <div><b>5+</b><span>années d'expérience</span></div>
 <div><b>1,5 M$+</b><span>de budget publicitaire géré</span></div>
 <div><b>80+</b><span>clients accompagnés</span></div>
 <div><b>4x</b><span>ROAS moyen visé</span></div>
+</div>
+</div>
+<div class="wpf-hv">
+<div class="wpf-hr"></div>
+<div class="wpf-hph"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5a8d8a7b39.30259637_PR6.jpeg" alt="Dave, media buyer Meta Ads" fetchpriority="high"></div>
+<span class="wpf-fc c1"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg></span><span><b>4,2x</b><small>ROAS</small></span></span>
+<span class="wpf-fc c2"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><span><b>1,2 $</b><small>par lead</small></span></span>
+<span class="wpf-fi c3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+</div>
 </div>
 </div>
 </header>
