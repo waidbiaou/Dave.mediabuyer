@@ -16,7 +16,8 @@ html{scroll-behavior:smooth;overflow-x:clip}
 /* NAV */
 .wpf-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:24px;padding:14px 5cqw;background:#fff;border-bottom:1px solid var(--ln)}
 .wpf-logo{display:flex;align-items:center;gap:12px;flex:none}
-.wpf-av{width:44px;height:44px;border-radius:50%;background:var(--b);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Sora';font-weight:700;font-size:18px}
+.wpf-av{width:44px;height:44px;flex:none;border-radius:50%;background:var(--b);overflow:hidden;border:2px solid #fff;box-shadow:0 0 0 1.5px var(--ln)}
+.wpf-av img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .wpf-lb b{display:block;font-family:'Sora';font-size:18px;letter-spacing:-.02em}
 .wpf-lb span{display:block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--b);font-weight:700;margin-top:3px}
 .wpf-menu{display:flex;gap:2px;margin-left:auto}
@@ -79,7 +80,8 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-frame{padding:10px;background:var(--b);border-radius:36px}
 .wpf-frame.bl{background:var(--b)}
 .wpf-ph{position:relative;aspect-ratio:4/5;border-radius:26px;background:#EAF0FF;border:2px dashed #B9C9F5;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:14px;color:var(--bd);overflow:hidden}
-.wpf-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wpf-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.wpf-ph.has{border:0;padding:0;background:#0F1B2D}
 .wpf-sts{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ln);border-radius:28px;overflow:hidden;margin-top:70px}
 .wpf-sts div{padding:30px 28px;border-left:1px solid var(--ln)}.wpf-sts div:first-child{border-left:0}
 .wpf-sts b{display:block;font-family:'Sora';font-size:clamp(30px,3.6cqw,46px);color:var(--b);letter-spacing:-.03em;margin-bottom:8px}
@@ -309,7 +311,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 
 <div class="wpf-root">
 <nav class="wpf-nav">
-<a class="wpf-logo" href="#accueil"><span class="wpf-av">D</span><span class="wpf-lb"><b>Dave</b><span>Media Buyer</span></span></a>
+<a class="wpf-logo" href="#accueil"><span class="wpf-av"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5ad04095c5.00222365_PR9.jpeg" alt="Dave" width="44" height="44" fetchpriority="high"></span><span class="wpf-lb"><b>Dave</b><span>Media Buyer</span></span></a>
 <div class="wpf-menu" id="wpfM"><a href="#accueil">Accueil</a><a href="#a-propos">À propos</a><a href="#services">Services</a><a href="#experiences">Expériences</a><a href="#resultats">Résultats</a><a href="#tarif">Tarif</a><a href="#contact">Contact</a></div>
 <a class="wpf-btn sm wpf-nc" href="#contact">Travaillez avec moi</a>
 <button class="wpf-burger" id="wpfB" aria-label="Menu">☰</button>
@@ -330,8 +332,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-row"><a class="wpf-btn" href="#contact">Démarrer ↗</a><a class="wpf-btn gh" href="#resultats">Voir les résultats</a></div>
 </div>
 <div class="wpf-frame">
-<!-- Pour mettre votre photo : remplacez le texte ci-dessous par <img src="URL-DE-VOTRE-PHOTO" alt="Dave, media buyer"> -->
-<div class="wpf-ph">IMAGE : photo professionnelle de Dave (format vertical 4:5)</div>
+<div class="wpf-ph has"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5a8d8a7b39.30259637_PR6.jpeg" alt="Dave, media buyer" fetchpriority="high"></div>
 </div>
 </div>
 <!-- CHIFFRES D'EXEMPLE : à remplacer par vos vrais chiffres -->
@@ -363,7 +364,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <section class="wpf-sec">
 <div class="wpf-in wpf-g2 wpf-ab">
 <div class="wpf-rv">
-<div class="wpf-frame bl"><div class="wpf-ph">IMAGE : photo de Dave au travail ou en situation</div></div>
+<div class="wpf-frame bl"><div class="wpf-ph has"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5abc6d3623.44205908_PR8.jpeg" alt="Dave au travail" loading="lazy"></div></div>
 <div class="wpf-cap"><span>Dave</span><span>Fig. 01</span></div>
 </div>
 <div class="wpf-rv">
@@ -534,7 +535,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <section class="wpf-sec" style="padding-top:80px">
 <div class="wpf-in wpf-g2 wpf-ab" style="align-items:start">
 <div class="wpf-rv">
-<div class="wpf-frame bl"><div class="wpf-ph">IMAGE : portrait professionnel de Dave (format vertical 4:5)</div></div>
+<div class="wpf-frame bl"><div class="wpf-ph has"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5abc6d3623.44205908_PR8.jpeg" alt="Portrait de Dave" loading="lazy"></div></div>
 <div class="wpf-cap"><span>Dave</span><span>Fig. 01</span></div>
 </div>
 <div class="wpf-rv">
