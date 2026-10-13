@@ -35,6 +35,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-btn.gh:hover{border-color:var(--b);color:var(--b)}
 .wpf-btn.wh{background:#fff;color:var(--bd)}.wpf-btn.wh:hover{background:#EAF0FF;color:var(--bd)}
 .wpf-btn.sm{padding:12px 22px;font-size:12px}
+.wpf-btn svg{width:20px;height:20px;fill:currentColor;flex:none}
 .wpf-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
 
 /* PAGES */
@@ -253,12 +254,14 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-ln:hover{border-color:var(--b);transform:translateX(4px)}
 .wpf-ln small{color:var(--t)}
 .wpf-ic{width:46px;height:46px;border-radius:14px;background:var(--b);color:#fff;font-family:'Sora';font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none;transition:.25s}
+.wpf-ic svg{width:24px;height:24px;fill:currentColor;display:block}
 .wpf-ln:hover .wpf-ic{background:var(--bd)}
 .wpf-fm{background:var(--g);border:1px solid var(--ln);border-radius:32px;padding:40px}
 .wpf-fm h3{font-size:28px}
 .wpf-fm label{display:block;font-size:13px;font-weight:700;margin:18px 0 6px}
 .wpf-fm input,.wpf-fm select,.wpf-fm textarea{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid var(--ln);font:inherit;font-size:15px;background:#fff;color:var(--ink)}
 .wpf-fm input:focus,.wpf-fm select:focus,.wpf-fm textarea:focus{outline:0;border-color:var(--b)}
+.wpf-fm input.err{border-color:var(--o)}
 .wpf-fm .wpf-btn{width:100%;justify-content:center;margin-top:24px}
 
 .wpf-ft{padding:30px 5cqw;text-align:center;font-size:13px;color:var(--t);border-top:1px solid var(--ln)}
@@ -287,6 +290,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-row{justify-content:center}
 .wpf-strip{justify-content:center;text-align:center}
 .wpf-cap{justify-content:center;gap:28px}
+.wpf-hgrid{gap:0}.wpf-hgrid>div:first-child{display:contents}.wpf-hgrid h1{order:1}.wpf-hgrid .wpf-p{order:2}.wpf-hgrid .wpf-frame{order:3;margin-top:36px}.wpf-hgrid .wpf-row{order:4;margin-top:32px}
 .wpf-ul{width:fit-content;margin-inline:auto}
 .wpf-card .wpf-ul{width:auto;margin-inline:0}
 }
@@ -365,7 +369,6 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-in wpf-g2 wpf-ab">
 <div class="wpf-rv">
 <div class="wpf-frame bl"><div class="wpf-ph has"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5abc6d3623.44205908_PR8.jpeg" alt="Dave au travail" loading="lazy"></div></div>
-<div class="wpf-cap"><span>Dave</span><span>Fig. 01</span></div>
 </div>
 <div class="wpf-rv">
 <span class="wpf-tag t-user">À propos</span>
@@ -393,14 +396,17 @@ html{scroll-behavior:smooth;overflow-x:clip}
 </div>
 </section>
 
-<!-- SOLUTION -->
+<!-- SOLUTION (sans image) -->
 <section class="wpf-sec">
-<div class="wpf-in wpf-g2">
-<div class="wpf-rv"><span class="wpf-tag t-check">La solution</span><h2 class="wpf-h2">Une acquisition <em>pilotée par les données</em>.</h2>
-<p class="wpf-p">Je construis des campagnes Meta Ads qui s'appuient sur un tracking propre, des créatives testées et une optimisation continue. Résultat : un coût d'acquisition qui baisse et des ventes qui montent.</p>
-<ul class="wpf-ul wpf-gd"><li>Tracking Pixel et API de conversion</li><li>Créatives pensées pour le marché africain et international</li><li>Décisions basées sur les chiffres, pas sur l'intuition</li></ul>
-<div class="wpf-row"><a class="wpf-btn" href="#services">Découvrir mes services</a></div></div>
-<div class="wpf-frame wpf-rv"><div class="wpf-ph" style="aspect-ratio:4/3">IMAGE : capture d'un tableau de bord Ads Manager</div></div>
+<div class="wpf-in">
+<div class="wpf-hd wpf-rv"><span class="wpf-tag t-check">La solution</span><h2 class="wpf-h2">Une acquisition <em>pilotée par les données</em>.</h2>
+<p class="wpf-p">Je construis des campagnes Meta Ads qui s'appuient sur un tracking propre, des créatives testées et une optimisation continue. Résultat : un coût d'acquisition qui baisse et des ventes qui montent.</p></div>
+<div class="wpf-g3">
+<div class="wpf-card wpf-gd wpf-rv"><span class="nb">01</span><h3>Tracking fiable</h3><p>Pixel et API de conversion installés proprement, pour mesurer chaque lead et chaque vente.</p></div>
+<div class="wpf-card wpf-gd wpf-rv"><span class="nb">02</span><h3>Créatives qui convertissent</h3><p>Des publicités pensées pour le marché africain et international, testées puis optimisées.</p></div>
+<div class="wpf-card wpf-gd wpf-rv"><span class="nb">03</span><h3>Décisions basées sur les chiffres</h3><p>Chaque ajustement s'appuie sur les données, jamais sur l'intuition.</p></div>
+</div>
+<div class="wpf-row" style="justify-content:center"><a class="wpf-btn" href="#services">Découvrir mes services</a></div>
 </div>
 </section>
 
@@ -536,7 +542,6 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-in wpf-g2 wpf-ab" style="align-items:start">
 <div class="wpf-rv">
 <div class="wpf-frame bl"><div class="wpf-ph has"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace5abc6d3623.44205908_PR8.jpeg" alt="Portrait de Dave" loading="lazy"></div></div>
-<div class="wpf-cap"><span>Dave</span><span>Fig. 01</span></div>
 </div>
 <div class="wpf-rv">
 <span class="wpf-tag t-user">À propos</span>
@@ -704,14 +709,14 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <section class="wpf-sec" style="padding-top:80px;min-height:80vh">
 <div class="wpf-in wpf-ct">
 <div><span class="wpf-tag t-mail">Contact</span><h2 class="wpf-h2">Parlons de <em>votre projet</em>.</h2><p class="wpf-p" style="margin-bottom:34px">Décrivez votre besoin, je vous réponds sous 24 heures avec une première analyse.</p>
-<a class="wpf-ln" href="https://wa.me/NUMERO"><div class="wpf-ic">WA</div><div><b>WhatsApp</b><br><small>+XXX XX XX XX XX</small></div></a>
-<a class="wpf-ln" href="mailto:contact@votresite.com"><div class="wpf-ic">@</div><div><b>Email</b><br><small>contact@votresite.com</small></div></a>
-<a class="wpf-ln" href="#contact"><div class="wpf-ic">in</div><div><b>LinkedIn et Instagram</b><br><small>Ajoutez vos liens ici</small></div></a></div>
+<a class="wpf-ln" href="https://wa.me/22997610367" target="_blank" rel="noopener"><div class="wpf-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div><div><b>WhatsApp</b><br><small>+229 97 61 03 67</small></div></a>
+<a class="wpf-ln" href="mailto:contact@votresite.com"><div class="wpf-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13zm2.3-.2L12 11.2l7.7-5.9a.5.5 0 0 0-.2-.05h-15a.5.5 0 0 0-.2.05zM20 7.4l-7.4 5.7a1 1 0 0 1-1.2 0L4 7.4v11.1c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.4z"/></svg></div><div><b>Email</b><br><small>contact@votresite.com</small></div></a>
+<a class="wpf-ln" href="https://www.facebook.com/share/1DnwBsNRkd/?mibextid=wwXIfr" target="_blank" rel="noopener"><div class="wpf-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div><div><b>Facebook</b><br><small>Suivez-moi sur Facebook</small></div></a></div>
 <div class="wpf-fm wpf-rv"><h3>Envoyer ma demande</h3>
-<label for="wpfN">Nom</label><input id="wpfN" type="text" placeholder="Votre nom">
-<label for="wpfS">Je cherche</label><select id="wpfS"><option>Lead Generation</option><option>E-commerce</option><option>Infopreneuriat</option></select>
+<label for="wpfN">Nom</label><input id="wpfN" type="text" placeholder="Votre nom" autocomplete="name">
+<label for="wpfS">Je suis</label><select id="wpfS"><option>Infopreneur</option><option>E-commerçant</option><option>Prestataire de services</option></select>
 <label for="wpfT">Votre projet</label><textarea id="wpfT" rows="4" placeholder="Décrivez votre besoin"></textarea>
-<button class="wpf-btn" id="wpfSend" type="button">Envoyer sur WhatsApp</button></div>
+<button class="wpf-btn" id="wpfSend" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Envoyer sur WhatsApp</button></div>
 </div>
 </section>
 </div>
@@ -754,7 +759,16 @@ window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clien
 window.addEventListener('pointerup',function(){if(!down)return;down=false;tr.classList.remove('drg');if(drag){go(near());setTimeout(function(){drag=false},0)}});
 upd()});
 document.getElementById('wpfB').onclick=function(){M.classList.toggle('open')};
-document.getElementById('wpfSend').onclick=function(){var m='Bonjour, je suis '+document.getElementById('wpfN').value+'. Je cherche : '+document.getElementById('wpfS').value+'. '+document.getElementById('wpfT').value;window.open('https://wa.me/NUMERO?text='+encodeURIComponent(m),'_blank')}
+/* Formulaire : envoi direct vers WhatsApp (+229 97 61 03 67) avec les réponses */
+var WA_NUM='22997610367';
+document.getElementById('wpfSend').onclick=function(){
+var n=document.getElementById('wpfN'),s=document.getElementById('wpfS'),t=document.getElementById('wpfT');
+var nom=n.value.trim(),projet=t.value.trim();
+if(!nom){n.classList.add('err');n.focus();return}
+n.classList.remove('err');
+var m='Bonjour Dave,\n\nJe m\'appelle '+nom+'.\nJe suis : '+s.value+'.\nMon projet : '+(projet||'(non précisé)')+'\n\nMerci de me répondre ici.';
+window.open('https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(m),'_blank')};
+document.getElementById('wpfN').addEventListener('input',function(){this.classList.remove('err')})
 })();
 </script>
 </body></html>
