@@ -193,7 +193,13 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-sts span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--t)}
 
 /* PANNEAU BLEU */
-.wpf-pan{margin:0 3cqw;border-radius:40px;background:var(--bd);color:#fff;padding:90px 3cqw}
+.wpf-pan{position:relative;overflow:hidden;margin:0 3cqw;border-radius:40px;background:linear-gradient(135deg,#0A1E6B 0%,#0C3E94 45%,#1783C9 100%);color:#fff;padding:90px 3cqw}
+.wpf-pan:before{content:"";position:absolute;top:-180px;right:-140px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(71,192,247,.55) 0%,rgba(71,192,247,0) 68%);pointer-events:none}
+.wpf-pan:after{content:"";position:absolute;bottom:-200px;left:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(71,192,247,.22) 0%,rgba(71,192,247,0) 70%);pointer-events:none}
+.wpf-pan .wpf-in{position:relative;z-index:1}
+.wpf-pan .wpf-sv{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.28)}
+.wpf-pan .wpf-sv>div{border-color:rgba(255,255,255,.28)}
+.wpf-pan .wpf-sv .k b{color:#fff}
 .wpf-pan .wpf-p{color:#C4EAFC}
 .wpf-sv{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border:1px solid rgba(255,255,255,.18);border-radius:28px;overflow:hidden}
 .wpf-sv>div{padding:40px 34px;border-left:1px solid rgba(255,255,255,.18);transition:.3s;display:flex;flex-direction:column}
