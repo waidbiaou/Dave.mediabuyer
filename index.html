@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dave | Media Buyer Meta Ads</title>
+<title>Dave | Media Buyer</title>
 <style>html,body{margin:0;background:#fff}</style></head>
 <body>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,7 +31,8 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-btn:hover{background:var(--bd);transform:translateY(-2px)}
 .wpf-btn.or{background:var(--o)}.wpf-btn.or:hover{background:#E55A00}
 .wpf-btn.gh{background:#fff;color:var(--ink);border:1.5px solid var(--ln)}
-.wpf-btn.gh:hover{border-color:var(--o);color:var(--o)}
+.wpf-btn.gh:hover{border-color:var(--b);color:var(--b)}
+.wpf-btn.wh{background:#fff;color:var(--bd)}.wpf-btn.wh:hover{background:#EAF0FF;color:var(--bd)}
 .wpf-btn.sm{padding:12px 22px;font-size:12px}
 .wpf-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
 
@@ -42,10 +43,31 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-in{max-width:1180px;margin:auto}
 .wpf-gr{background:var(--g)}
 .wpf-hd{text-align:center;margin-bottom:10px}.wpf-hd .wpf-p{margin-inline:auto}
-.wpf-tag{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--o);margin-bottom:20px}
-.wpf-tag:before{content:"";width:28px;height:2px;border-radius:2px;background:var(--o)}
+.wpf-tag{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 12px;border-radius:99px;background:#EAF0FF;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--b);margin-bottom:20px}
+.wpf-tag:before{content:"";width:18px;height:18px;flex:none;background:currentColor;-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+.wpf-pan .wpf-tag{background:rgba(255,255,255,.12);color:#fff}
+.t-target{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><circle cx='12' cy='12' r='6'/><circle cx='12' cy='12' r='2'/></svg>")}
+.t-user{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='8' r='4'/><path d='M4 21c0-4 4-6 8-6s8 2 8 6'/></svg>")}
+.t-alert{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z'/><path d='M12 9v4M12 17h.01'/></svg>")}
+.t-check{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='m8 12 3 3 5-6'/></svg>")}
+.t-grid{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='3' width='7' height='7' rx='1'/><rect x='14' y='3' width='7' height='7' rx='1'/><rect x='3' y='14' width='7' height='7' rx='1'/><rect x='14' y='14' width='7' height='7' rx='1'/></svg>")}
+.t-route{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='6' cy='19' r='3'/><path d='M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15'/><circle cx='18' cy='5' r='3'/></svg>")}
+.t-swap{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4'/></svg>")}
+.t-trend{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m22 7-8.5 8.5-5-5L2 17'/><path d='M16 7h6v6'/></svg>")}
+.t-users{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='8' r='4'/><path d='M1 21c0-4 3.5-6 8-6s8 2 8 6M17 4a4 4 0 0 1 0 8M23 21c0-3-2-5-4-5.7'/></svg>")}
+.t-msg{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/></svg>")}
+.t-help{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01'/></svg>")}
+.t-info{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='M12 16v-4M12 8h.01'/></svg>")}
+.t-shield{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/><path d='m9 12 2 2 4-4'/></svg>")}
+.t-brief{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='7' width='20' height='14' rx='2'/><path d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'/></svg>")}
+.t-award{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='8' r='6'/><path d='M15.5 13.5 17 22l-5-3-5 3 1.5-8.5'/></svg>")}
+.t-tag{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z'/><path d='M7 7h.01'/></svg>")}
+.t-mail{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='4' width='20' height='16' rx='2'/><path d='m22 7-10 6L2 7'/></svg>")}
+.t-cart{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='21' r='1'/><circle cx='20' cy='21' r='1'/><path d='M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6'/></svg>")}
+.t-book{--ic:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z'/></svg>")}
 .wpf-h2{font-size:clamp(30px,4.6cqw,56px);margin-bottom:22px}
-.wpf-h2 em,.wpf-hero h1 em{font-style:italic;color:var(--o);font-weight:700}
+.wpf-h2 em,.wpf-hero h1 em{font-style:italic;color:var(--b);font-weight:700}
+.wpf-hero h1 em,.wpf-pan .wpf-h2 em{color:var(--o)}
 .wpf-p{font-size:17px;line-height:1.75;color:var(--t);max-width:620px;margin:0}
 
 /* HERO */
@@ -54,7 +76,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-strip i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--o);margin-right:10px}
 .wpf-hgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center;padding-top:64px}
 .wpf-hero h1{font-size:clamp(36px,6cqw,82px);margin-bottom:28px}
-.wpf-frame{padding:10px;background:var(--o);border-radius:36px}
+.wpf-frame{padding:10px;background:var(--b);border-radius:36px}
 .wpf-frame.bl{background:var(--b)}
 .wpf-ph{position:relative;aspect-ratio:4/5;border-radius:26px;background:#EAF0FF;border:2px dashed #B9C9F5;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:14px;color:var(--bd);overflow:hidden}
 .wpf-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -69,9 +91,9 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-sv{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border:1px solid rgba(255,255,255,.18);border-radius:28px;overflow:hidden}
 .wpf-sv>div{padding:40px 34px;border-left:1px solid rgba(255,255,255,.18);transition:.3s;display:flex;flex-direction:column}
 .wpf-sv>div:first-child{border-left:0}.wpf-sv>div:hover{background:rgba(255,255,255,.06)}
-.wpf-sv .n{display:flex;justify-content:space-between;font-family:'Sora';font-weight:700;font-size:26px;color:var(--o)}
+.wpf-sv .n{display:flex;justify-content:space-between;font-family:'Sora';font-weight:700;font-size:26px;color:#8FB0FF}
 .wpf-sv h3{font-size:30px;margin:44px 0 10px}
-.wpf-sv small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--o);font-weight:700}
+.wpf-sv small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8FB0FF;font-weight:700}
 .wpf-sv p{color:#C9D6FF;line-height:1.7;font-size:15.5px;margin:22px 0 32px;flex:1}
 .wpf-sv .k{border-top:1px solid rgba(255,255,255,.18);padding-top:24px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .wpf-sv .k b{font-family:'Sora';font-size:38px;letter-spacing:-.03em}
@@ -86,25 +108,26 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,71,230,.09)}
 .wpf-card h3{font-size:23px;margin:0 0 12px}
 .wpf-card p{margin:0;line-height:1.65;font-size:15.5px;color:var(--t)}
-.wpf-card .lb{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--o);font-weight:700;margin-bottom:14px}
-.wpf-card .nb{display:block;font-family:'Sora';font-weight:700;font-size:20px;color:var(--o);margin-bottom:18px}
+.wpf-card .lb{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--b);font-weight:700;margin-bottom:14px}
+.wpf-card .nb{display:block;font-family:'Sora';font-weight:700;font-size:20px;color:var(--b);margin-bottom:18px}
 .wpf-ul{list-style:none;padding:0;margin:18px 0 0}
 .wpf-ul li{padding:8px 0 8px 24px;position:relative;font-size:15px;line-height:1.5}
-.wpf-ul li:before{content:"";position:absolute;left:0;top:15px;width:8px;height:8px;border-radius:50%;background:var(--o)}
+.wpf-ul li:before{content:"";position:absolute;left:0;top:15px;width:8px;height:8px;border-radius:50%;background:var(--b)}
+.wpf-ba .bad .wpf-ul li:before{background:var(--o)}
 .wpf-gd .wpf-ul li:before{background:var(--b)}
 
 /* A PROPOS */
 .wpf-cap{display:flex;justify-content:space-between;margin-top:16px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--t)}
 .wpf-cols{columns:2;column-gap:36px;margin-top:8px}
 .wpf-tx{font-size:16.5px;line-height:1.8;color:var(--t);margin:0 0 16px;break-inside:avoid}
-.wpf-dc:first-letter{float:left;font-family:'Sora';font-weight:800;font-size:64px;line-height:.85;color:var(--o);padding:6px 12px 0 0}
-.wpf-bq{margin:30px 0 0;padding:6px 0 6px 24px;border-left:3px solid var(--o);font-size:19px;line-height:1.6}
+.wpf-dc:first-letter{float:left;font-family:'Sora';font-weight:800;font-size:64px;line-height:.85;color:var(--b);padding:6px 12px 0 0}
+.wpf-bq{margin:30px 0 0;padding:6px 0 6px 24px;border-left:3px solid var(--b);font-size:19px;line-height:1.6}
 
 /* LISTE BLOCAGES */
 .wpf-rows{border:1px solid var(--ln);border-radius:28px;overflow:hidden;background:#fff}
 .wpf-rw{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:28px 32px;border-top:1px solid var(--ln);transition:.25s}
 .wpf-rw:first-child{border-top:0}.wpf-rw:hover{background:var(--g)}
-.wpf-rw .n{font-family:'Sora';font-weight:700;color:var(--o);font-size:20px}
+.wpf-rw .n{font-family:'Sora';font-weight:700;color:var(--b);font-size:20px}
 .wpf-rw h3{font-size:21px;margin-bottom:8px}
 .wpf-rw p{margin:0;color:var(--t);line-height:1.65;font-size:15.5px}
 
@@ -113,13 +136,13 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-sk>div{padding:40px;border-left:1px solid var(--ln);border-top:1px solid var(--ln)}
 .wpf-sk>div:nth-child(odd){border-left:0}.wpf-sk>div:nth-child(-n+2){border-top:0}
 .wpf-sk h3{font-size:25px;display:flex;gap:16px;align-items:baseline;padding-bottom:22px;border-bottom:1px solid var(--ln);margin-bottom:24px}
-.wpf-sk h3 span{color:var(--o)}
+.wpf-sk h3 span{color:var(--b)}
 .wpf-chip{display:inline-block;padding:9px 16px;border:1px solid var(--ln);border-radius:99px;font-size:14px;margin:0 6px 10px 0;transition:.2s;background:#fff}
-.wpf-chip:hover{border-color:var(--o);color:var(--o)}
+.wpf-chip:hover{border-color:var(--b);color:var(--b)}
 
 /* METHODE */
 .wpf-stp{padding-top:26px;border-top:2px solid var(--ln);position:relative}
-.wpf-stp:before{content:"";position:absolute;top:-2px;left:0;width:48px;height:2px;background:var(--o)}
+.wpf-stp:before{content:"";position:absolute;top:-2px;left:0;width:48px;height:2px;background:var(--b)}
 .wpf-stp .num{font-family:'Sora';font-weight:700;font-size:44px;color:var(--b);letter-spacing:-.03em}
 .wpf-stp h3{font-size:22px;margin:14px 0 10px}
 .wpf-stp p{margin:0;color:var(--t);line-height:1.7;font-size:15.5px}
@@ -150,12 +173,12 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-tl{position:relative;margin-top:50px;padding-left:64px}
 .wpf-tl:before{content:"";position:absolute;left:18px;top:10px;bottom:10px;width:2px;background:var(--ln)}
 .wpf-ti{position:relative;margin-bottom:28px}
-.wpf-ti:before{content:"";position:absolute;left:-55px;top:34px;width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--o);box-shadow:0 0 0 6px #FFF0E5}
+.wpf-ti:before{content:"";position:absolute;left:-55px;top:34px;width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--b);box-shadow:0 0 0 6px #EAF0FF}
 .wpf-ti .wpf-card:hover{transform:none;box-shadow:none}
 .wpf-ti .wpf-card{padding:36px}
 .wpf-ti .wm{position:absolute;right:30px;top:16px;font-family:'Sora';font-weight:800;font-size:90px;color:#F0F3FA;line-height:1}
-.wpf-bdg{display:inline-block;padding:7px 14px;border-radius:99px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;border:1px solid #FFD0AE;color:var(--o);background:#FFF4EC;margin-right:8px}
-.wpf-bdg.b{border-color:#CBD8FF;color:var(--b);background:#EEF3FF}
+.wpf-bdg{display:inline-block;padding:7px 14px;border-radius:99px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;border:1px solid #CBD8FF;color:var(--b);background:#EEF3FF;margin-right:8px}
+.wpf-bdg.b{border-color:var(--ln);color:var(--t);background:var(--g)}
 .wpf-ti h3{font-size:32px;margin:22px 0 8px;position:relative}
 .wpf-ti .dt{color:var(--t);font-size:15px;padding-bottom:22px;border-bottom:1px solid var(--ln);margin-bottom:22px}
 .wpf-ti h4{font-family:'Sora';font-size:19px;margin:0 0 8px;letter-spacing:-.02em}
@@ -171,10 +194,10 @@ html{scroll-behavior:smooth;overflow-x:clip}
 
 /* FAQ */
 .wpf-fq details{border:1px solid var(--ln);border-radius:20px;padding:22px 26px;margin-bottom:14px;background:#fff;transition:.25s}
-.wpf-fq details[open]{border-color:var(--o)}
+.wpf-fq details[open]{border-color:var(--b)}
 .wpf-fq summary{font-weight:700;cursor:pointer;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .wpf-fq summary::-webkit-details-marker{display:none}
-.wpf-fq summary:after{content:"+";color:var(--o);font-size:24px;line-height:1}
+.wpf-fq summary:after{content:"+";color:var(--b);font-size:24px;line-height:1}
 .wpf-fq details[open] summary:after{content:"–"}
 .wpf-fq p{margin:14px 0 0;color:var(--t);line-height:1.7}
 
@@ -186,10 +209,10 @@ html{scroll-behavior:smooth;overflow-x:clip}
 /* CONTACT */
 .wpf-ct{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
 .wpf-ln{display:flex;align-items:center;gap:16px;padding:18px 20px;border:1px solid var(--ln);border-radius:20px;margin-bottom:14px;transition:.25s;background:#fff}
-.wpf-ln:hover{border-color:var(--o);transform:translateX(4px)}
+.wpf-ln:hover{border-color:var(--b);transform:translateX(4px)}
 .wpf-ln small{color:var(--t)}
 .wpf-ic{width:46px;height:46px;border-radius:14px;background:var(--b);color:#fff;font-family:'Sora';font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none;transition:.25s}
-.wpf-ln:hover .wpf-ic{background:var(--o)}
+.wpf-ln:hover .wpf-ic{background:var(--bd)}
 .wpf-fm{background:var(--g);border:1px solid var(--ln);border-radius:32px;padding:40px}
 .wpf-fm h3{font-size:28px}
 .wpf-fm label{display:block;font-size:13px;font-weight:700;margin:18px 0 6px}
@@ -215,6 +238,15 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-frame{max-width:440px;width:100%;margin-inline:auto}
 .wpf-case .wpf-ph{min-height:220px;border-right:0;border-bottom:2px dashed #B9C9F5}.wpf-cb{padding:28px}
 .wpf-cols{columns:1}
+.wpf-h2,.wpf-hero h1,.wpf-p{text-align:center}
+.wpf-p{margin-inline:auto}
+.wpf-tag{display:flex;width:fit-content;margin-inline:auto}
+.wpf-cb .wpf-tag{margin-inline:0}
+.wpf-row{justify-content:center}
+.wpf-strip{justify-content:center;text-align:center}
+.wpf-cap{justify-content:center;gap:28px}
+.wpf-ul{width:fit-content;margin-inline:auto}
+.wpf-card .wpf-ul{width:auto;margin-inline:0}
 }
 @container wpfc (max-width:560px){
 .wpf-g4{grid-template-columns:1fr}
@@ -237,7 +269,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 
 <div class="wpf-root">
 <nav class="wpf-nav">
-<a class="wpf-logo" href="#accueil"><span class="wpf-av">D</span><span class="wpf-lb"><b>Dave</b><span>Meta Ads Media Buyer</span></span></a>
+<a class="wpf-logo" href="#accueil"><span class="wpf-av">D</span><span class="wpf-lb"><b>Dave</b><span>Media Buyer</span></span></a>
 <div class="wpf-menu" id="wpfM"><a href="#accueil">Accueil</a><a href="#a-propos">À propos</a><a href="#services">Services</a><a href="#experiences">Expériences</a><a href="#resultats">Résultats</a><a href="#tarif">Tarif</a><a href="#contact">Contact</a></div>
 <a class="wpf-btn sm wpf-nc" href="#contact">Travaillez avec moi</a>
 <button class="wpf-burger" id="wpfB" aria-label="Menu">☰</button>
@@ -250,11 +282,11 @@ html{scroll-behavior:smooth;overflow-x:clip}
 
 <header class="wpf-hero">
 <div class="wpf-in">
-<div class="wpf-strip"><span>Meta Ads Media Buyer</span><span><i></i>Freelance · Disponible</span><span>Cotonou · Remote</span></div>
+<div class="wpf-strip"><span>Media Buyer</span><span><i></i>Freelance · Disponible</span><span>Remote · International</span></div>
 <div class="wpf-hgrid">
 <div>
 <h1>Je transforme vos publicités en <em>clients</em> et en chiffre d'affaires.</h1>
-<p class="wpf-p">Media buyer Meta Ads basé à Cotonou, je génère des leads pour les infopreneurs et des ventes pour les commerçants, en Afrique francophone et à l'international.</p>
+<p class="wpf-p">Media buyer spécialisé Meta Ads, je génère des leads pour les infopreneurs et des ventes pour les commerçants, en Afrique francophone et à l'international.</p>
 <div class="wpf-row"><a class="wpf-btn" href="#contact">Démarrer ↗</a><a class="wpf-btn gh" href="#resultats">Voir les résultats</a></div>
 </div>
 <div class="wpf-frame">
@@ -275,7 +307,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- SERVICES (panneau bleu) -->
 <section class="wpf-pan">
 <div class="wpf-in">
-<span class="wpf-tag">Ce que je fais</span>
+<span class="wpf-tag t-target">Ce que je fais</span>
 <h2 class="wpf-h2">Trois terrains, une même exigence : <em>la rentabilité</em>.</h2>
 <p class="wpf-p">Chaque secteur a ses propres règles. J'adapte la stratégie Meta Ads à votre modèle économique.</p>
 <div class="wpf-sv">
@@ -283,7 +315,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-rv"><div class="n"><span>02</span><span>↗</span></div><h3>E-commerce</h3><small>Scaling ROAS</small><p>Des ventes rentables pour les boutiques en ligne grâce aux campagnes de conversion, au retargeting et au catalogue.</p><div class="k"><b>4,2x</b><span>ROAS</span></div></div>
 <div class="wpf-rv"><div class="n"><span>03</span><span>↗</span></div><h3>Infopreneuriat</h3><small>Inscriptions et ventes</small><p>Des inscriptions à vos webinaires et masterclass, puis des ventes de formations et d'ebooks, portées par Meta Ads.</p><div class="k"><b>45 k$</b><span>de CA généré</span></div></div>
 </div>
-<div class="wpf-row"><a class="wpf-btn or" href="#services">Détail des services</a></div>
+<div class="wpf-row"><a class="wpf-btn wh" href="#services">Détail des services</a></div>
 </div>
 </section>
 
@@ -292,10 +324,10 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-in wpf-g2 wpf-ab">
 <div class="wpf-rv">
 <div class="wpf-frame bl"><div class="wpf-ph">IMAGE : photo de Dave au travail ou en situation</div></div>
-<div class="wpf-cap"><span>— Dave · Cotonou</span><span>Fig. 01</span></div>
+<div class="wpf-cap"><span>Dave</span><span>Fig. 01</span></div>
 </div>
 <div class="wpf-rv">
-<span class="wpf-tag">À propos</span>
+<span class="wpf-tag t-user">À propos</span>
 <h2 class="wpf-h2">Dave, un media buyer qui parle <em>résultats</em>.</h2>
 <div class="wpf-cols">
 <p class="wpf-tx wpf-dc">Mon rôle est simple : acheter de l'attention au meilleur prix et la convertir en prospects qualifiés et en ventes rentables. Chaque euro dépensé est suivi, mesuré et optimisé.</p>
@@ -310,7 +342,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- BLOCAGES -->
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in wpf-g2" style="align-items:start">
-<div class="wpf-rv"><span class="wpf-tag">Mon terrain d'action</span><h2 class="wpf-h2">Les blocages que <em>je résous</em> pour mes clients.</h2><p class="wpf-p">Voici ce que je rencontre le plus souvent chez les entrepreneurs qui font appel à moi.</p></div>
+<div class="wpf-rv"><span class="wpf-tag t-alert">Mon terrain d'action</span><h2 class="wpf-h2">Les blocages que <em>je résous</em> pour mes clients.</h2><p class="wpf-p">Voici ce que je rencontre le plus souvent chez les entrepreneurs qui font appel à moi.</p></div>
 <div class="wpf-rows wpf-rv">
 <div class="wpf-rw"><span class="n">01</span><div><h3>Budget gaspillé</h3><p>Des campagnes lancées sans stratégie qui consomment votre budget en quelques jours.</p></div></div>
 <div class="wpf-rw"><span class="n">02</span><div><h3>Leads non qualifiés</h3><p>Des contacts qui ne répondent pas et n'achètent jamais.</p></div></div>
@@ -323,7 +355,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- SOLUTION -->
 <section class="wpf-sec">
 <div class="wpf-in wpf-g2">
-<div class="wpf-rv"><span class="wpf-tag">La solution</span><h2 class="wpf-h2">Une acquisition <em>pilotée par les données</em>.</h2>
+<div class="wpf-rv"><span class="wpf-tag t-check">La solution</span><h2 class="wpf-h2">Une acquisition <em>pilotée par les données</em>.</h2>
 <p class="wpf-p">Je construis des campagnes Meta Ads qui s'appuient sur un tracking propre, des créatives testées et une optimisation continue. Résultat : un coût d'acquisition qui baisse et des ventes qui montent.</p>
 <ul class="wpf-ul wpf-gd"><li>Tracking Pixel et API de conversion</li><li>Créatives pensées pour le marché africain et international</li><li>Décisions basées sur les chiffres, pas sur l'intuition</li></ul>
 <div class="wpf-row"><a class="wpf-btn" href="#services">Découvrir mes services</a></div></div>
@@ -334,7 +366,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- COMPETENCES -->
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Compétences</span><h2 class="wpf-h2">Ma boîte à outils <em>de media buyer</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-grid">Compétences</span><h2 class="wpf-h2">Ma boîte à outils <em>de media buyer</em>.</h2></div>
 <div class="wpf-sk wpf-rv">
 <div><h3><span>A</span>Plateforme Meta</h3><span class="wpf-chip">Ads Manager</span><span class="wpf-chip">Business Manager</span><span class="wpf-chip">Pixel</span><span class="wpf-chip">API de conversion</span><span class="wpf-chip">Advantage+</span><span class="wpf-chip">CBO / ABO</span><span class="wpf-chip">Events Manager</span></div>
 <div><h3><span>B</span>Stratégie &amp; Scaling</h3><span class="wpf-chip">Broad targeting</span><span class="wpf-chip">Audiences similaires</span><span class="wpf-chip">Retargeting</span><span class="wpf-chip">Scaling vertical</span><span class="wpf-chip">Scaling horizontal</span><span class="wpf-chip">Tests d'audiences</span></div>
@@ -347,7 +379,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- METHODE -->
 <section class="wpf-sec">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Ma méthode</span><h2 class="wpf-h2">De l'audit au scaling, <em>en 4 étapes</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-route">Ma méthode</span><h2 class="wpf-h2">De l'audit au scaling, <em>en 4 étapes</em>.</h2></div>
 <div class="wpf-g4">
 <div class="wpf-stp wpf-rv"><div class="num">01</div><h3>Audit</h3><p>Analyse de votre offre, de votre marché et de vos données existantes.</p></div>
 <div class="wpf-stp wpf-rv"><div class="num">02</div><h3>Stratégie</h3><p>Plan de campagne, audiences, tracking et créatives à produire.</p></div>
@@ -360,7 +392,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- AVANT / APRES -->
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">La différence</span><h2 class="wpf-h2">Avant et après <em>une collaboration</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-swap">La différence</span><h2 class="wpf-h2">Avant et après <em>une collaboration</em>.</h2></div>
 <div class="wpf-ba">
 <div class="wpf-card bad wpf-rv"><h3>Sans stratégie</h3><ul class="wpf-ul"><li>Budget dispersé sans objectif</li><li>Coût par lead qui explose</li><li>Aucune donnée fiable</li><li>Décisions prises au hasard</li></ul></div>
 <div class="wpf-card good wpf-gd wpf-rv"><h3>Avec une méthode</h3><ul class="wpf-ul"><li>Budget concentré sur ce qui rapporte</li><li>Coût d'acquisition maîtrisé</li><li>Tracking précis et rapports clairs</li><li>Croissance stable et prévisible</li></ul></div>
@@ -371,7 +403,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- RESULTATS (aperçu) -->
 <section class="wpf-sec">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Résultats</span><h2 class="wpf-h2">Des chiffres qui <em>parlent</em>.</h2><p class="wpf-p">Un aperçu de campagnes récentes.</p></div>
+<div class="wpf-hd"><span class="wpf-tag t-trend">Résultats</span><h2 class="wpf-h2">Des chiffres qui <em>parlent</em>.</h2><p class="wpf-p">Un aperçu de campagnes récentes.</p></div>
 <!-- CHIFFRES D'EXEMPLE : à remplacer par vos vrais résultats -->
 <div class="wpf-g3">
 <div class="wpf-card wpf-rs wpf-rv"><span class="lb">Lead Gen</span><b>1,2$</b><p>de coût par lead sur une offre de services locale.</p></div>
@@ -385,7 +417,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- POUR QUI -->
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in wpf-g2">
-<div class="wpf-rv"><span class="wpf-tag">Clients accompagnés</span><h2 class="wpf-h2">Les profils que <em>j'accompagne</em>.</h2><p class="wpf-p">Je choisis des projets où je peux vraiment faire la différence, dans trois grands secteurs.</p></div>
+<div class="wpf-rv"><span class="wpf-tag t-users">Clients accompagnés</span><h2 class="wpf-h2">Les profils que <em>j'accompagne</em>.</h2><p class="wpf-p">Je choisis des projets où je peux vraiment faire la différence, dans trois grands secteurs.</p></div>
 <div class="wpf-rv">
 <div class="wpf-card" style="margin-bottom:16px"><h3 style="font-size:20px">Infopreneurs</h3><p>Formations, ebooks, masterclass, programmes et communautés payantes.</p></div>
 <div class="wpf-card" style="margin-bottom:16px"><h3 style="font-size:20px">Commerçants et e-commerçants</h3><p>Boutiques en ligne, vendeurs sur WhatsApp et commerces locaux.</p></div>
@@ -397,7 +429,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- TEMOIGNAGES -->
 <section class="wpf-sec">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Avis clients</span><h2 class="wpf-h2">Ils parlent <em>mieux que moi</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-msg">Avis clients</span><h2 class="wpf-h2">Ils parlent <em>mieux que moi</em>.</h2></div>
 <!-- TEMOIGNAGES : à remplacer par de vrais avis clients -->
 <div class="wpf-g3">
 <div class="wpf-card wpf-rv"><p class="wpf-q">« Témoignage client à ajouter ici, avec le résultat concret obtenu. »</p><div class="wpf-who">Nom du client<small>Infopreneur</small></div></div>
@@ -410,7 +442,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- FAQ -->
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in" style="max-width:860px">
-<div class="wpf-hd" style="margin-bottom:40px"><span class="wpf-tag">FAQ</span><h2 class="wpf-h2">Vos <em>questions</em>, mes réponses.</h2></div>
+<div class="wpf-hd" style="margin-bottom:40px"><span class="wpf-tag t-help">FAQ</span><h2 class="wpf-h2">Vos <em>questions</em>, mes réponses.</h2></div>
 <div class="wpf-fq">
 <details><summary>Combien de temps avant les premiers résultats ?</summary><p>Les premières données arrivent en quelques jours. La performance se stabilise en général entre 3 et 4 semaines.</p></details>
 <details><summary>Quel budget minimum faut-il prévoir ?</summary><p>Cela dépend de votre offre et de votre marché. On définit ensemble un budget de test réaliste lors de l'appel découverte.</p></details>
@@ -432,13 +464,13 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-in wpf-g2 wpf-ab" style="align-items:start">
 <div class="wpf-rv">
 <div class="wpf-frame bl"><div class="wpf-ph">IMAGE : portrait professionnel de Dave (format vertical 4:5)</div></div>
-<div class="wpf-cap"><span>— Dave · Cotonou</span><span>Fig. 01</span></div>
+<div class="wpf-cap"><span>Dave</span><span>Fig. 01</span></div>
 </div>
 <div class="wpf-rv">
-<span class="wpf-tag">À propos</span>
+<span class="wpf-tag t-user">À propos</span>
 <h2 class="wpf-h2">Qui est <em>Dave</em> ?</h2>
 <!-- Vous pouvez ajouter ici votre histoire personnelle : ce qui vous a mené au media buying et ce qui vous distingue -->
-<p class="wpf-tx wpf-dc">Je suis Dave, media buyer basé à Cotonou, au Bénin. Je pilote des campagnes Meta Ads qui génèrent des leads pour les infopreneurs et des ventes pour les commerçants.</p>
+<p class="wpf-tx wpf-dc">Je suis Dave, media buyer spécialisé Meta Ads. Je pilote des campagnes Meta Ads qui génèrent des leads pour les infopreneurs et des ventes pour les commerçants.</p>
 <p class="wpf-tx">Mon approche repose sur une stratégie claire, un tracking précis et des décisions prises sur les chiffres. Chaque campagne poursuit un objectif simple : un coût d'acquisition maîtrisé et une croissance durable.</p>
 <p class="wpf-bq">Acheter de l'attention au meilleur prix, et la convertir en clients.</p>
 <div class="wpf-row"><a class="wpf-btn" href="#contact">Me contacter</a></div>
@@ -447,9 +479,9 @@ html{scroll-behavior:smooth;overflow-x:clip}
 </section>
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Informations</span><h2 class="wpf-h2">Dave <em>en un coup d'œil</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-info">Informations</span><h2 class="wpf-h2">Dave <em>en un coup d'œil</em>.</h2></div>
 <div class="wpf-g4">
-<div class="wpf-card wpf-rv"><span class="lb">Localisation</span><h3 style="font-size:20px;margin:0">Cotonou, Bénin</h3></div>
+<div class="wpf-card wpf-rv"><span class="lb">Zones</span><h3 style="font-size:20px;margin:0">Afrique francophone et international</h3></div>
 <div class="wpf-card wpf-rv"><span class="lb">Langues</span><h3 style="font-size:20px;margin:0">Français et anglais</h3></div>
 <div class="wpf-card wpf-rv"><span class="lb">Spécialité</span><h3 style="font-size:20px;margin:0">Meta Ads, Facebook et Instagram</h3></div>
 <div class="wpf-card wpf-rv"><span class="lb">Disponibilité</span><h3 style="font-size:20px;margin:0">À distance, partout dans le monde</h3></div>
@@ -458,7 +490,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 </section>
 <section class="wpf-sec">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Mes valeurs</span><h2 class="wpf-h2">Ce qui guide <em>mon travail</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-shield">Mes valeurs</span><h2 class="wpf-h2">Ce qui guide <em>mon travail</em>.</h2></div>
 <div class="wpf-g3">
 <div class="wpf-card wpf-rv"><span class="nb">01</span><h3>Rigueur</h3><p>Je décide avec des données, jamais au hasard. Chaque test est documenté et chaque résultat analysé.</p></div>
 <div class="wpf-card wpf-rv"><span class="nb">02</span><h3>Transparence</h3><p>Mes clients gardent la main sur leur compte publicitaire et reçoivent des rapports clairs.</p></div>
@@ -472,7 +504,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-pg" id="services">
 <section class="wpf-sec" style="padding-top:80px">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Services</span><h2 class="wpf-h2">Trois expertises, <em>un seul objectif</em> : la rentabilité.</h2><p class="wpf-p">Des campagnes Meta Ads construites autour de votre modèle économique et de votre marché.</p></div>
+<div class="wpf-hd"><span class="wpf-tag t-target">Services</span><h2 class="wpf-h2">Trois expertises, <em>un seul objectif</em> : la rentabilité.</h2><p class="wpf-p">Des campagnes Meta Ads construites autour de votre modèle économique et de votre marché.</p></div>
 <div class="wpf-g3">
 <div class="wpf-card wpf-gd wpf-rv"><span class="nb">01</span><h3>Lead Generation</h3><p>Générez des prospects qualifiés pour vos services et vos offres locales, à un coût par lead maîtrisé.</p><ul class="wpf-ul"><li>Campagnes de formulaires et de messages</li><li>Ciblage et audiences</li><li>Suivi de la qualité des leads</li></ul></div>
 <div class="wpf-card wpf-gd wpf-rv"><span class="nb">02</span><h3>E-commerce</h3><p>Vendez vos produits en ligne grâce à des campagnes de conversion, de retargeting et de catalogue.</p><ul class="wpf-ul"><li>Campagnes Advantage+</li><li>Créatives produit performantes</li><li>Optimisation du ROAS</li></ul></div>
@@ -482,7 +514,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 </section>
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Méthode</span><h2 class="wpf-h2">Un process <em>clair</em>, étape par étape.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-route">Méthode</span><h2 class="wpf-h2">Un process <em>clair</em>, étape par étape.</h2></div>
 <div class="wpf-g4">
 <div class="wpf-stp wpf-rv"><div class="num">01</div><h3>Audit</h3><p>Votre offre, vos données et votre marché passés en revue.</p></div>
 <div class="wpf-stp wpf-rv"><div class="num">02</div><h3>Stratégie</h3><p>Tracking, audiences et plan de campagne.</p></div>
@@ -497,10 +529,10 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-pg" id="experiences">
 <section class="wpf-sec" style="padding-top:80px">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Expériences</span><h2 class="wpf-h2">Un parcours bâti <em>sur le terrain</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-brief">Expériences</span><h2 class="wpf-h2">Un parcours bâti <em>sur le terrain</em>.</h2></div>
 <!-- PARCOURS D'EXEMPLE : dates et intitulés à remplacer par votre vrai parcours -->
 <div class="wpf-tl">
-<div class="wpf-ti wpf-rv"><div class="wpf-card"><span class="wm">01</span><span class="wpf-bdg">Freelance</span><span class="wpf-bdg b">En cours</span><h3>Media Buyer Freelance</h3><div class="dt">2024 · Aujourd'hui</div><h4>Meta Ads Specialist</h4><p>Gestion de campagnes Meta Ads pour des infopreneurs, des e-commerçants et des prestataires de services, en Afrique francophone et à l'international.</p></div></div>
+<div class="wpf-ti wpf-rv"><div class="wpf-card"><span class="wm">01</span><span class="wpf-bdg">Freelance</span><span class="wpf-bdg b">En cours</span><h3>Media Buyer Freelance</h3><div class="dt">2024 · Aujourd'hui</div><h4>Campagnes Meta Ads</h4><p>Gestion de campagnes Meta Ads pour des infopreneurs, des e-commerçants et des prestataires de services, en Afrique francophone et à l'international.</p></div></div>
 <div class="wpf-ti wpf-rv"><div class="wpf-card"><span class="wm">02</span><span class="wpf-bdg">Agence</span><h3>Media Buyer en agence</h3><div class="dt">2022 · 2024</div><h4>Campagnes multi-clients</h4><p>Pilotage de budgets publicitaires multi-clients, création de créatives, mise en place du tracking et des rapports de performance.</p></div></div>
 <div class="wpf-ti wpf-rv"><div class="wpf-card"><span class="wm">03</span><span class="wpf-bdg">Débuts</span><h3>Premières campagnes</h3><div class="dt">2021 · 2022</div><h4>Acquisition et tests</h4><p>Premiers lancements de campagnes de lead generation et d'e-commerce, tests de créatives et d'audiences.</p></div></div>
 <div class="wpf-ti wpf-rv"><div class="wpf-card"><span class="wm">04</span><span class="wpf-bdg b">Formation</span><h3>Certifications et formations</h3><div class="dt">Parcours</div><h4>Meta Blueprint et performance marketing</h4><p>Meta Blueprint, performance marketing, analytics et copywriting publicitaire.</p></div></div>
@@ -509,7 +541,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 </section>
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Ils m'ont fait confiance</span><h2 class="wpf-h2">Marques et <em>clients</em> accompagnés.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-award">Ils m'ont fait confiance</span><h2 class="wpf-h2">Marques et <em>clients</em> accompagnés.</h2></div>
 <div class="wpf-lg"><div class="wpf-ph wpf-rv">LOGO CLIENT 1</div><div class="wpf-ph wpf-rv">LOGO CLIENT 2</div><div class="wpf-ph wpf-rv">LOGO CLIENT 3</div></div>
 </div>
 </section>
@@ -519,16 +551,16 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-pg" id="resultats">
 <section class="wpf-sec" style="padding-top:80px">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Résultats</span><h2 class="wpf-h2">Des campagnes <em>mesurées</em>, des résultats <em>réels</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-trend">Résultats</span><h2 class="wpf-h2">Des campagnes <em>mesurées</em>, des résultats <em>réels</em>.</h2></div>
 <!-- ETUDES DE CAS D'EXEMPLE : chiffres à remplacer par vos vrais résultats -->
-<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, lead generation</div><div class="wpf-cb"><span class="wpf-tag">Lead Generation</span><h3>Prestataire de services, Cotonou</h3><p>Campagne de génération de prospects avec formulaire et relance par message pour remplir l'agenda en continu.</p><div class="wpf-kp"><div><b>1,2$</b><span>coût par lead</span></div><div><b>1 800</b><span>leads en 60 jours</span></div><div><b>35%</b><span>taux de closing</span></div></div></div></div>
-<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, e-commerce</div><div class="wpf-cb"><span class="wpf-tag">E-commerce</span><h3>Boutique en ligne, mode et beauté</h3><p>Structure de campagnes de conversion et de retargeting pour augmenter les ventes tout en gardant une marge saine.</p><div class="wpf-kp"><div><b>4,2x</b><span>ROAS</span></div><div><b>+320%</b><span>de ventes</span></div><div><b>12 k$</b><span>budget géré</span></div></div></div></div>
-<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, infopreneuriat</div><div class="wpf-cb"><span class="wpf-tag">Infopreneuriat</span><h3>Lancement d'une formation en ligne</h3><p>Campagnes d'inscription au webinaire puis campagnes de vente pour un lancement de formation à forte conversion.</p><div class="wpf-kp"><div><b>250</b><span>ventes au lancement</span></div><div><b>6x</b><span>ROAS</span></div><div><b>45 k$</b><span>de chiffre d'affaires</span></div></div></div></div>
+<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, lead generation</div><div class="wpf-cb"><span class="wpf-tag t-target">Lead Generation</span><h3>Prestataire de services</h3><p>Campagne de génération de prospects avec formulaire et relance par message pour remplir l'agenda en continu.</p><div class="wpf-kp"><div><b>1,2$</b><span>coût par lead</span></div><div><b>1 800</b><span>leads en 60 jours</span></div><div><b>35%</b><span>taux de closing</span></div></div></div></div>
+<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, e-commerce</div><div class="wpf-cb"><span class="wpf-tag t-cart">E-commerce</span><h3>Boutique en ligne, mode et beauté</h3><p>Structure de campagnes de conversion et de retargeting pour augmenter les ventes tout en gardant une marge saine.</p><div class="wpf-kp"><div><b>4,2x</b><span>ROAS</span></div><div><b>+320%</b><span>de ventes</span></div><div><b>12 k$</b><span>budget géré</span></div></div></div></div>
+<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, infopreneuriat</div><div class="wpf-cb"><span class="wpf-tag t-book">Infopreneuriat</span><h3>Lancement d'une formation en ligne</h3><p>Campagnes d'inscription au webinaire puis campagnes de vente pour un lancement de formation à forte conversion.</p><div class="wpf-kp"><div><b>250</b><span>ventes au lancement</span></div><div><b>6x</b><span>ROAS</span></div><div><b>45 k$</b><span>de chiffre d'affaires</span></div></div></div></div>
 </div>
 </section>
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Témoignages</span><h2 class="wpf-h2">Ce que disent <em>mes clients</em>.</h2></div>
+<div class="wpf-hd"><span class="wpf-tag t-msg">Témoignages</span><h2 class="wpf-h2">Ce que disent <em>mes clients</em>.</h2></div>
 <div class="wpf-g3">
 <div class="wpf-card wpf-rv"><p class="wpf-q">« Témoignage client à ajouter ici, avec le résultat obtenu grâce à votre travail. »</p><div class="wpf-who">Nom du client<small>Infopreneur</small></div></div>
 <div class="wpf-card wpf-rv"><p class="wpf-q">« Témoignage client à ajouter ici, avec le résultat obtenu grâce à votre travail. »</p><div class="wpf-who">Nom du client<small>E-commerçant</small></div></div>
@@ -542,7 +574,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-pg" id="tarif">
 <section class="wpf-sec" style="padding-top:80px">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag">Tarif</span><h2 class="wpf-h2">Des offres <em>simples</em> et transparentes.</h2><p class="wpf-p">Prix indicatifs. Le budget publicitaire est payé directement à Meta et n'est pas inclus.</p></div>
+<div class="wpf-hd"><span class="wpf-tag t-tag">Tarif</span><h2 class="wpf-h2">Des offres <em>simples</em> et transparentes.</h2><p class="wpf-p">Prix indicatifs. Le budget publicitaire est payé directement à Meta et n'est pas inclus.</p></div>
 <div class="wpf-g3">
 <div class="wpf-card wpf-pr wpf-gd wpf-rv"><h3>Lancement</h3><p>Pour démarrer proprement avec Meta Ads.</p><div class="am">150 000 F CFA</div><p>par mois</p><ul class="wpf-ul"><li>Audit et stratégie</li><li>1 campagne active</li><li>Tracking et pixel</li><li>Rapport mensuel</li></ul></div>
 <div class="wpf-card wpf-pr ft wpf-rv"><span class="wpf-pop">Populaire</span><h3>Croissance</h3><p>Pour scaler vos campagnes gagnantes.</p><div class="am">300 000 F CFA</div><p>par mois</p><ul class="wpf-ul"><li>Campagnes illimitées</li><li>Briefs de créatives</li><li>Optimisation quotidienne</li><li>Rapport hebdomadaire</li><li>Appel de suivi</li></ul></div>
@@ -552,7 +584,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 </section>
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in" style="max-width:820px">
-<div class="wpf-hd" style="margin-bottom:40px"><span class="wpf-tag">Questions fréquentes</span><h2 class="wpf-h2">Vous vous demandez <em>encore</em> ?</h2></div>
+<div class="wpf-hd" style="margin-bottom:40px"><span class="wpf-tag t-help">Questions fréquentes</span><h2 class="wpf-h2">Vous vous demandez <em>encore</em> ?</h2></div>
 <div class="wpf-fq">
 <details><summary>Le budget publicitaire est-il inclus ?</summary><p>Non, il est réglé directement à Meta depuis votre compte publicitaire.</p></details>
 <details><summary>Quand voit-on les premiers résultats ?</summary><p>Les premières données arrivent en quelques jours, l'optimisation se stabilise sous 3 à 4 semaines.</p></details>
@@ -566,21 +598,21 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-pg" id="contact">
 <section class="wpf-sec" style="padding-top:80px;min-height:80vh">
 <div class="wpf-in wpf-ct">
-<div><span class="wpf-tag">Contact</span><h2 class="wpf-h2">Parlons de <em>votre projet</em>.</h2><p class="wpf-p" style="margin-bottom:34px">Décrivez votre besoin, je vous réponds sous 24 heures avec une première analyse.</p>
-<a class="wpf-ln" href="https://wa.me/229XXXXXXXX"><div class="wpf-ic">WA</div><div><b>WhatsApp</b><br><small>+229 XX XX XX XX</small></div></a>
+<div><span class="wpf-tag t-mail">Contact</span><h2 class="wpf-h2">Parlons de <em>votre projet</em>.</h2><p class="wpf-p" style="margin-bottom:34px">Décrivez votre besoin, je vous réponds sous 24 heures avec une première analyse.</p>
+<a class="wpf-ln" href="https://wa.me/NUMERO"><div class="wpf-ic">WA</div><div><b>WhatsApp</b><br><small>+XXX XX XX XX XX</small></div></a>
 <a class="wpf-ln" href="mailto:contact@votresite.com"><div class="wpf-ic">@</div><div><b>Email</b><br><small>contact@votresite.com</small></div></a>
 <a class="wpf-ln" href="#contact"><div class="wpf-ic">in</div><div><b>LinkedIn et Instagram</b><br><small>Ajoutez vos liens ici</small></div></a></div>
 <div class="wpf-fm wpf-rv"><h3>Envoyer ma demande</h3>
 <label for="wpfN">Nom</label><input id="wpfN" type="text" placeholder="Votre nom">
 <label for="wpfS">Je cherche</label><select id="wpfS"><option>Lead Generation</option><option>E-commerce</option><option>Infopreneuriat</option></select>
 <label for="wpfT">Votre projet</label><textarea id="wpfT" rows="4" placeholder="Décrivez votre besoin"></textarea>
-<button class="wpf-btn or" id="wpfSend" type="button">Envoyer sur WhatsApp</button></div>
+<button class="wpf-btn" id="wpfSend" type="button">Envoyer sur WhatsApp</button></div>
 </div>
 </section>
 </div>
 
 </main>
-<footer class="wpf-ft">© 2026 Dave, Media Buyer Meta Ads. Tous droits réservés.</footer>
+<footer class="wpf-ft">© 2026 Dave, Media Buyer. Tous droits réservés.</footer>
 </div>
 
 <script>
@@ -597,7 +629,7 @@ var R=document.querySelector('.wpf-root');
 function fit(){R.style.width='';R.style.marginLeft='';var vw=document.documentElement.clientWidth,r=R.getBoundingClientRect();if(vw<=700||r.width>=700){R.style.width=vw+'px';R.style.marginLeft=(-r.left)+'px'}}
 fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
 document.getElementById('wpfB').onclick=function(){M.classList.toggle('open')};
-document.getElementById('wpfSend').onclick=function(){var m='Bonjour, je suis '+document.getElementById('wpfN').value+'. Je cherche : '+document.getElementById('wpfS').value+'. '+document.getElementById('wpfT').value;window.open('https://wa.me/229XXXXXXXX?text='+encodeURIComponent(m),'_blank')}
+document.getElementById('wpfSend').onclick=function(){var m='Bonjour, je suis '+document.getElementById('wpfN').value+'. Je cherche : '+document.getElementById('wpfS').value+'. '+document.getElementById('wpfT').value;window.open('https://wa.me/NUMERO?text='+encodeURIComponent(m),'_blank')}
 })();
 </script>
 </body></html>
