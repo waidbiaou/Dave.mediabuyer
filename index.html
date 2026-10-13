@@ -117,6 +117,56 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-cc .rs b{display:block;font-family:'Plus Jakarta Sans','DM Sans',sans-serif;font-weight:800;font-size:26px;letter-spacing:-.03em;color:var(--b);line-height:1}
 .wpf-cc .rs small{display:block;font-size:12px;color:var(--t);margin-top:4px}
 @media (prefers-reduced-motion:reduce){.wpf-mt .st,.wpf-cc{transition:none}.wpf-mt .st{opacity:1;transform:none}.wpf-mln i{width:100%;transition:none}.wpf-mt .nd{background:var(--b);color:#fff;transition:none}}
+/* BOUTON WHATSAPP FLOTTANT */
+.wpf-wa{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:12px;font-family:'DM Sans',system-ui,sans-serif;text-decoration:none}
+.wpf-wa .tip{padding:10px 16px;border-radius:99px;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 10px 26px rgba(10,30,107,.16);font-size:14px;font-weight:700;color:#0B1220;white-space:nowrap;opacity:0;transform:translateX(10px);pointer-events:none;transition:.3s}
+.wpf-wa:hover .tip,.wpf-wa:focus-visible .tip{opacity:1;transform:none}
+.wpf-wa .bt{position:relative;display:inline-flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#3EE27A,#1FB855);color:#fff;box-shadow:0 14px 30px rgba(31,184,85,.45);transition:transform .3s}
+.wpf-wa .bt:before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;opacity:.5;animation:wpfPulse 2.4s ease-out infinite;z-index:-1}
+.wpf-wa:hover .bt{transform:scale(1.08)}
+.wpf-wa svg{width:32px;height:32px;fill:currentColor}
+@keyframes wpfPulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.7);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wpf-wa .bt:before{animation:none}}
+@media (max-width:560px){.wpf-wa .tip{display:none}.wpf-wa .bt{width:56px;height:56px}}
+/* PROFILS ACCOMPAGNES : onglets + scene a chiffre cle */
+.wpf-pz{margin-top:44px}
+.wpf-pzt{position:relative;display:flex;gap:4px;width:fit-content;max-width:100%;margin:0 auto;padding:6px;border-radius:99px;background:rgba(255,255,255,.85);border:1px solid rgba(71,192,247,.3);box-shadow:0 14px 34px rgba(71,192,247,.16);overflow-x:auto;scrollbar-width:none}
+.wpf-pzt::-webkit-scrollbar{display:none}
+.wpf-pzi{position:absolute;top:6px;bottom:6px;left:0;width:0;border-radius:99px;background:linear-gradient(135deg,#47C0F7,#2FA8E6);box-shadow:0 8px 20px rgba(71,192,247,.45);transition:transform .5s cubic-bezier(.2,.7,.2,1),width .5s cubic-bezier(.2,.7,.2,1)}
+.wpf-pzt button{position:relative;z-index:1;display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border:0;border-radius:99px;background:transparent;font:inherit;font-size:14.5px;font-weight:700;color:var(--t);cursor:pointer;white-space:nowrap;transition:color .3s}
+.wpf-pzt button svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.wpf-pzt button.on{color:#fff}
+.wpf-pzt button:not(.on):hover{color:var(--bd)}
+.wpf-pzt button:focus-visible{outline:3px solid var(--bd);outline-offset:2px}
+.wpf-pzs{position:relative;overflow:hidden;margin-top:26px;border-radius:38px;background:linear-gradient(135deg,#EAF8FE 0%,#FFFFFF 52%,#E3F5FE 100%);border:1px solid rgba(71,192,247,.3);box-shadow:0 24px 60px rgba(71,192,247,.14)}
+.wpf-pzs:before{content:"";position:absolute;inset:0;background:radial-gradient(#47C0F7 1.3px,transparent 1.4px) 0 0/22px 22px;opacity:.16;-webkit-mask:linear-gradient(90deg,transparent 40%,#000);mask:linear-gradient(90deg,transparent 40%,#000);pointer-events:none}
+.wpf-pzp{display:none;position:relative;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:56px}
+.wpf-pzp.on{display:grid;animation:wpfIn .6s ease}
+.wpf-pzl .lb{display:inline-flex;align-items:center;gap:12px;font-family:'Sora';font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#1478BA;margin-bottom:18px}
+.wpf-pzl h3{font-size:clamp(30px,3.5cqw,46px);margin:0 0 16px}
+.wpf-pzl p{margin:0 0 30px;max-width:460px;font-size:17px;line-height:1.7;color:var(--t)}
+.wpf-pzv{position:relative;width:100%;max-width:400px;aspect-ratio:1/1;margin-inline:auto;display:grid;place-items:center}
+.wpf-pzv .rg{position:absolute;border-radius:50%;border:1.5px solid rgba(71,192,247,.38)}
+.wpf-pzv .r1{inset:0;border-style:dashed;animation:wpfSp 40s linear infinite}
+.wpf-pzv .r2{inset:13%}
+.wpf-pzv .r3{inset:24%;background:radial-gradient(circle,#fff 42%,rgba(71,192,247,.16));border-color:rgba(71,192,247,.55);box-shadow:0 0 60px rgba(71,192,247,.28)}
+@keyframes wpfSp{to{transform:rotate(360deg)}}
+.wpf-pzn{position:relative;text-align:center}
+.wpf-pzn b{display:block;font-family:'Plus Jakarta Sans','DM Sans',sans-serif;font-weight:800;font-size:clamp(40px,5.2cqw,66px);letter-spacing:-.05em;line-height:1;background:linear-gradient(135deg,#47C0F7,#0C6FB0);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.wpf-pzn small{display:block;margin-top:8px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--t)}
+@media (prefers-reduced-motion:reduce){.wpf-pzv .r1,.wpf-pzi{animation:none;transition:none}.wpf-pzp.on{animation:none}}
+@container wpfc (max-width:860px){
+.wpf-pzp{grid-template-columns:1fr;gap:34px;padding:38px 24px}
+.wpf-pzl{text-align:center}
+.wpf-pzl p{margin-inline:auto}
+.wpf-pzv{max-width:320px}
+}
+@container wpfc (max-width:560px){
+.wpf-pzt button{padding:11px 14px;font-size:13px}
+.wpf-pzt button svg{display:none}
+.wpf-pzp{padding:30px 18px}
+.wpf-pzs{border-radius:30px}
+}
 /* NAV */
 .wpf-nav{position:sticky;top:0;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:12px 5cqw;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(18px) saturate(170%);backdrop-filter:blur(18px) saturate(170%);border-bottom:1px solid rgba(71,192,247,.22);box-shadow:0 8px 30px rgba(10,30,107,.05)}
 .wpf-nav .wpf-logo{justify-self:start}.wpf-nav .wpf-nc{justify-self:end}
@@ -637,10 +687,13 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <section class="wpf-sec wpf-gr">
 <div class="wpf-in">
 <div class="wpf-hd wpf-rv"><span class="wpf-tag t-users">Clients accompagnés</span><h2 class="wpf-h2">Les profils que <em>j'accompagne</em>.</h2><p class="wpf-p">Je choisis des projets où je peux vraiment faire la différence, dans trois grands secteurs.</p></div>
-<div class="wpf-cl">
-<article class="wpf-cc a wpf-rv"><span class="wm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span><h3>Infopreneurs</h3><p>Formations, ebooks, masterclass, programmes et communautés payantes.</p><ul><li>Formations</li><li>Ebooks</li><li>Masterclass</li><li>Programmes</li><li>Communautés payantes</li></ul><div class="rs"><span>Résultat type</span><div><b>45 k$</b><small>de CA généré</small></div></div></article>
-<article class="wpf-cc b wpf-rv"><span class="wm"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span><h3>Commerçants et e-commerçants</h3><p>Boutiques en ligne, vendeurs sur WhatsApp et commerces locaux.</p><ul><li>Boutiques en ligne</li><li>Vendeurs WhatsApp</li><li>Commerces locaux</li></ul><div class="rs"><span>Résultat type</span><div><b>4,2x</b><small>ROAS</small></div></div></article>
-<article class="wpf-cc c wpf-rv"><span class="wm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><h3>Prestataires de services</h3><p>Coachs, cliniques, immobilier, formation, restauration.</p><ul><li>Coachs</li><li>Cliniques</li><li>Immobilier</li><li>Formation</li><li>Restauration</li></ul><div class="rs"><span>Résultat type</span><div><b>1,2 $</b><small>par lead</small></div></div></article>
+<div class="wpf-pz">
+<div class="wpf-pzt" role="tablist" aria-label="Profils accompagnés"><span class="wpf-pzi"></span><button type="button" role="tab" id="wpfPzT0" aria-controls="wpfPzP0" aria-selected="true" tabindex="0" class="on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg><span>Infopreneurs</span></button><button type="button" role="tab" id="wpfPzT1" aria-controls="wpfPzP1" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span>E-commerçants</span></button><button type="button" role="tab" id="wpfPzT2" aria-controls="wpfPzP2" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg><span>Prestataires</span></button></div>
+<div class="wpf-pzs">
+<div class="wpf-pzp on" role="tabpanel" id="wpfPzP0" aria-labelledby="wpfPzT0"><div class="wpf-pzl"><span class="lb">Profil 01</span><h3>Infopreneurs</h3><p>Formations, ebooks, masterclass, programmes et communautés payantes.</p><a class="wpf-btn" href="#contact">Démarrer mon projet</a></div><div class="wpf-pzv" aria-hidden="true"><span class="rg r1"></span><span class="rg r2"></span><span class="rg r3"></span><div class="wpf-pzn"><b data-to="45" data-dec="0" data-suf=" k$">45 k$</b><small>de CA généré</small></div></div></div>
+<div class="wpf-pzp" role="tabpanel" id="wpfPzP1" aria-labelledby="wpfPzT1"><div class="wpf-pzl"><span class="lb">Profil 02</span><h3>Commerçants et e-commerçants</h3><p>Boutiques en ligne, vendeurs sur WhatsApp et commerces locaux.</p><a class="wpf-btn" href="#contact">Démarrer mon projet</a></div><div class="wpf-pzv" aria-hidden="true"><span class="rg r1"></span><span class="rg r2"></span><span class="rg r3"></span><div class="wpf-pzn"><b data-to="4.2" data-dec="1" data-suf="x">4,2x</b><small>de ROAS</small></div></div></div>
+<div class="wpf-pzp" role="tabpanel" id="wpfPzP2" aria-labelledby="wpfPzT2"><div class="wpf-pzl"><span class="lb">Profil 03</span><h3>Prestataires de services</h3><p>Coachs, cliniques, immobilier, formation, restauration.</p><a class="wpf-btn" href="#contact">Démarrer mon projet</a></div><div class="wpf-pzv" aria-hidden="true"><span class="rg r1"></span><span class="rg r2"></span><span class="rg r3"></span><div class="wpf-pzn"><b data-to="1.2" data-dec="1" data-suf=" $">1,2 $</b><small>par lead</small></div></div></div>
+</div>
 </div>
 </div>
 </section>
@@ -838,6 +891,8 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <footer class="wpf-ft">© 2026 Dave, Media Buyer. Tous droits réservés.</footer>
 </div>
 
+<a class="wpf-wa" href="https://wa.me/22997610367?text=Bonjour%20Dave%2C%20je%20souhaite%20discuter%20de%20mon%20projet%20Meta%20Ads." target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><span class="tip">Discutons sur WhatsApp</span><span class="bt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span></a>
+
 <script>
 (function(){
 var P=['accueil','a-propos','services','experiences','resultats','tarif','contact'],M=document.getElementById('wpfM');
@@ -884,6 +939,20 @@ tr.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||e.butt
 window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-sx;if(Math.abs(dx)>5){drag=true;tr.classList.add('drg')}if(drag)tr.scrollLeft=ss-dx});
 window.addEventListener('pointerup',function(){if(!down)return;down=false;tr.classList.remove('drg');if(drag){go(near());setTimeout(function(){drag=false},0)}});
 upd()});
+document.querySelectorAll('.wpf-pz').forEach(function(z){
+var tabs=[].slice.call(z.querySelectorAll('[role=tab]')),panes=[].slice.call(z.querySelectorAll('.wpf-pzp')),ind=z.querySelector('.wpf-pzi'),bar=z.querySelector('.wpf-pzt'),cur=0,af=0;
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+function place(){var t=tabs[cur];if(!t||!t.offsetWidth)return;ind.style.width=t.offsetWidth+'px';ind.style.transform='translateX('+t.offsetLeft+'px)'}
+function fmt(v,d,s){return v.toFixed(d).replace('.',',')+s}
+function count(p){var b=p.querySelector('.wpf-pzn b'),to=parseFloat(b.dataset.to),d=+b.dataset.dec,s=b.dataset.suf||'';cancelAnimationFrame(af);
+if(rm){b.textContent=fmt(to,d,s);return}
+var t0=null;function st(t){if(t0===null)t0=t;var k=Math.min((t-t0)/900,1),e=1-Math.pow(1-k,3);b.textContent=fmt(to*e,d,s);if(k<1)af=requestAnimationFrame(st)}af=requestAnimationFrame(st)}
+function sel(i,f){cur=i;tabs.forEach(function(b,k){var o=k===i;b.classList.toggle('on',o);b.setAttribute('aria-selected',o?'true':'false');b.tabIndex=o?0:-1});
+panes.forEach(function(p,k){p.classList.toggle('on',k===i)});place();count(panes[i]);if(f)tabs[i].focus();
+var t=tabs[i];if(bar.scrollWidth>bar.clientWidth)bar.scrollTo({left:t.offsetLeft-12,behavior:'smooth'})}
+tabs.forEach(function(b,i){b.addEventListener('click',function(){sel(i)});
+b.addEventListener('keydown',function(e){var n=tabs.length;if(e.key==='ArrowRight'){e.preventDefault();sel((i+1)%n,true)}if(e.key==='ArrowLeft'){e.preventDefault();sel((i-1+n)%n,true)}})});
+if(window.ResizeObserver)new ResizeObserver(place).observe(bar);window.addEventListener('resize',place);window.addEventListener('load',place)});
 document.getElementById('wpfB').onclick=function(){M.classList.toggle('open')};
 /* Formulaire : envoi direct vers WhatsApp (+229 97 61 03 67) avec les réponses */
 var WA_NUM='22997610367';
