@@ -201,19 +201,45 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-fq details[open] summary:after{content:"–"}
 .wpf-fq p{margin:14px 0 0;color:var(--t);line-height:1.7}
 
-/* PREUVES */
-.wpf-gal{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;margin-top:46px;align-items:start}
-.wpf-pf{grid-column:span 2;padding:0;border:1px solid var(--ln);border-radius:22px;overflow:hidden;background:#0F1B2D;cursor:zoom-in;display:block;transition:transform .3s,box-shadow .3s}
-.wpf-pf:nth-child(n+4){grid-column:span 3}
-.wpf-pf:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,71,230,.14)}
+/* RESULTATS : slider */
+.wpf-ag{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ln);border-radius:28px;overflow:hidden;margin-top:46px;background:#fff}
+.wpf-ag div{padding:28px 30px;border-left:1px solid var(--ln)}.wpf-ag div:first-child{border-left:0}
+.wpf-ag b{display:block;font-family:'Sora';font-size:clamp(28px,3.4cqw,44px);color:var(--b);letter-spacing:-.03em;margin-bottom:8px}
+.wpf-ag span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--t)}
+.wpf-nt{text-align:center;font-size:13px;color:var(--t);margin:16px 0 0}
+.wpf-sl{margin-top:34px}
+.wpf-tr{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab;outline:0;border-radius:34px}
+.wpf-tr::-webkit-scrollbar{display:none}
+.wpf-tr:focus-visible{outline:3px solid var(--b);outline-offset:4px}
+.wpf-tr.drg{scroll-snap-type:none;cursor:grabbing;user-select:none}
+.wpf-sd{flex:0 0 100%;scroll-snap-align:start;display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center;padding:20px;border:1px solid var(--ln);border-radius:32px;background:#fff;min-width:0}
+.wpf-pf{position:relative;display:block;width:100%;aspect-ratio:4/3;padding:0;border:0;border-radius:24px;background:#0F1B2D;cursor:zoom-in;overflow:hidden}
+.wpf-pf img{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);object-fit:contain;border-radius:14px;-webkit-user-drag:none;user-select:none}
 .wpf-pf:focus-visible{outline:3px solid var(--b);outline-offset:3px}
-.wpf-pf img{display:block;width:100%;height:auto}
-.wpf-nt{text-align:center;font-size:13px;color:var(--t);margin:22px 0 0}
+.wpf-inf{padding:8px 24px 8px 0;min-width:0}
+.wpf-inf .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.wpf-pl{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:99px;background:#EEF3FF;color:var(--b);font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.wpf-pl:before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.wpf-pl.off{background:var(--g);color:var(--t)}
+.wpf-inf h3{font-size:clamp(24px,2.7cqw,36px);margin:0 0 14px}
+.wpf-inf .ds{color:var(--t);line-height:1.7;margin:0 0 28px;font-size:16px}
+.wpf-km{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.wpf-km div{background:var(--g);border:1px solid var(--ln);border-radius:20px;padding:18px 16px;min-width:0}
+.wpf-km b{display:block;font-family:'Sora';font-size:clamp(20px,2.2cqw,30px);color:var(--b);letter-spacing:-.03em;margin-bottom:8px;white-space:nowrap}
+.wpf-km span{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--t);line-height:1.4}
+.wpf-ctl{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px}
+.wpf-ctr{font-family:'Sora';font-weight:700;font-size:15px;letter-spacing:.04em;min-width:64px}
+.wpf-dt{display:flex;gap:8px;align-items:center}
+.wpf-dt button{width:8px;height:8px;padding:0;border:0;border-radius:99px;background:#C9D6FF;cursor:pointer;transition:width .25s,background .25s}
+.wpf-dt button.on{width:28px;background:var(--b)}
+.wpf-ar{display:flex;gap:10px}
+.wpf-ar button{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--ln);background:#fff;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
+.wpf-ar button:hover:not(:disabled){background:var(--b);border-color:var(--b);color:#fff}
+.wpf-ar button:disabled{opacity:.35;cursor:default}
 .wpf-lbx{position:fixed;inset:0;z-index:200;background:rgba(10,30,107,.88);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
 .wpf-lbx.on{display:flex}
 .wpf-lbx img{max-width:min(1100px,100%);max-height:90vh;border-radius:20px;background:#0F1B2D}
 .wpf-lbx button{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:var(--bd);font-size:22px;cursor:pointer}
-
 /* CTA */
 .wpf-cta{margin:0 3cqw 60px;border-radius:40px;background:var(--b);color:#fff;padding:90px 5cqw;text-align:center}
 .wpf-cta .wpf-h2{max-width:800px;margin:0 auto 30px}
@@ -242,7 +268,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:14px 5cqw 20px;display:none;border-bottom:1px solid var(--ln);margin-left:0}.wpf-menu.open{display:flex}
 .wpf-hgrid,.wpf-g2,.wpf-ct,.wpf-case,.wpf-g3,.wpf-ba,.wpf-sv,.wpf-sk,.wpf-lg{grid-template-columns:1fr!important}
 .wpf-g4{grid-template-columns:1fr 1fr}
-.wpf-gal{grid-template-columns:1fr 1fr}.wpf-pf,.wpf-pf:nth-child(n+4){grid-column:span 1}.wpf-pf:last-child{grid-column:1/-1}
+.wpf-sd{grid-template-columns:1fr;gap:22px}.wpf-inf{padding:4px 8px 10px}.wpf-ag{grid-template-columns:1fr}.wpf-ag div{border-left:0;border-top:1px solid var(--ln);padding:22px 24px}.wpf-ag div:first-child{border-top:0}
 .wpf-sts{grid-template-columns:1fr 1fr}
 .wpf-sts div:nth-child(odd){border-left:0}.wpf-sts div:nth-child(n+3){border-top:1px solid var(--ln)}
 .wpf-g2,.wpf-hgrid,.wpf-ct{gap:40px}
@@ -263,7 +289,7 @@ html{scroll-behavior:smooth;overflow-x:clip}
 .wpf-card .wpf-ul{width:auto;margin-inline:0}
 }
 @container wpfc (max-width:560px){
-.wpf-g4{grid-template-columns:1fr}.wpf-gal{grid-template-columns:1fr}.wpf-pf:last-child{grid-column:auto}
+.wpf-g4{grid-template-columns:1fr}.wpf-tr{gap:14px}.wpf-sd{padding:12px;border-radius:26px}.wpf-pf{border-radius:18px}.wpf-pf img{inset:12px;width:calc(100% - 24px);height:calc(100% - 24px)}.wpf-km{gap:8px}.wpf-km div{padding:14px 10px}.wpf-km b{font-size:19px}.wpf-km span{font-size:10px;letter-spacing:.06em}.wpf-ar button{width:44px;height:44px}.wpf-ctl{gap:10px}
 .wpf-hero{padding-bottom:64px}.wpf-hgrid{padding-top:40px}
 .wpf-sec{padding:60px 5cqw}
 .wpf-card{padding:26px}.wpf-card h3{font-size:21px}
@@ -417,15 +443,45 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <!-- RESULTATS (aperçu) -->
 <section class="wpf-sec">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag t-trend">Résultats</span><h2 class="wpf-h2">Des chiffres qui <em>parlent</em>.</h2><p class="wpf-p">Un aperçu de campagnes récentes, avec les captures de mes campagnes en dessous.</p></div>
-<!-- CHIFFRES D'EXEMPLE : à remplacer par vos vrais résultats -->
-<div class="wpf-g3">
-<div class="wpf-card wpf-rs wpf-rv"><span class="lb">Lead Gen</span><b>1,2$</b><p>de coût par lead sur une offre de services locale.</p></div>
-<div class="wpf-card wpf-rs wpf-rv"><span class="lb">E-commerce</span><b>4,2x</b><p>de ROAS sur une boutique mode et beauté.</p></div>
-<div class="wpf-card wpf-rs wpf-rv"><span class="lb">Infopreneuriat</span><b>45 k$</b><p>de chiffre d'affaires sur un lancement de formation.</p></div>
+<div class="wpf-hd"><span class="wpf-tag t-trend">Résultats</span><h2 class="wpf-h2">Des chiffres qui <em>parlent</em>.</h2><p class="wpf-p">Des campagnes réelles, directement depuis le gestionnaire de publicités Meta.</p></div>
+<div class="wpf-ag"><div><b>1 847</b><span>achats générés</span></div><div><b>≈ 4,2 k$</b><span>de budget dépensé</span></div><div><b>≈ 2,27 $</b><span>coût moyen par achat</span></div></div>
+<p class="wpf-nt">Total cumulé des cinq campagnes ci-dessous, d'après les captures du gestionnaire de publicités Meta.</p>
+<div class="wpf-sl">
+<div class="wpf-tr" tabindex="0" aria-label="Captures de campagnes, faites glisser pour parcourir">
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 1"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace15066ba540.94344197_PR1.jpeg" alt="Capture Ads Manager : campagne Stade3, 579 achats, 1,89 $ par résultat, 1,09 K$ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 01</span><span class="wpf-pl">Active</span></div>
+<h3>Campagne Stade3</h3><p class="ds">Campagne de ventes classée « High performing » par Meta : c'est la campagne qui a généré le plus d'achats.</p>
+<div class="wpf-km"><div><b>579</b><span>Achats sur le site</span></div><div><b>1,89 $</b><span>Coût par achat</span></div><div><b>1,09 K$</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 2"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace152d57e673.12342565_PR2.jpeg" alt="Capture Ads Manager : campagne Bénin et 4 pays Broad, 267 achats à 2,45 $, 654,91 $ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 02</span><span class="wpf-pl">Active</span></div>
+<h3>Bénin + 4 pays en ciblage Broad</h3><p class="ds">Test d'une même publicité sur le Bénin et quatre autres pays, avec un ciblage large (Broad).</p>
+<div class="wpf-km"><div><b>267</b><span>Achats sur le site</span></div><div><b>2,45 $</b><span>Coût par achat</span></div><div><b>654,91 $</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 3"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace1542175624.84879556_PR3.jpeg" alt="Capture Ads Manager : test de créatives IA, 576 achats, 1,85 $ par résultat, 1,07 K$ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 03</span><span class="wpf-pl">Active</span></div>
+<h3>Test de créatives avec l'IA</h3><p class="ds">Campagne active qui teste une nouvelle version de créative réalisée avec l'IA.</p>
+<div class="wpf-km"><div><b>576</b><span>Achats sur le site</span></div><div><b>1,85 $</b><span>Coût par achat</span></div><div><b>1,07 K$</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 4"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace155962da60.74765870_PR4.jpeg" alt="Capture Ads Manager : créative 1, 297 achats à 3,93 $, 1,17 K$ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 04</span><span class="wpf-pl off">Désactivée</span></div>
+<h3>Créative n°1</h3><p class="ds">Première créative testée, aujourd'hui désactivée. Elle a servi de base pour la version scalée en vidéo.</p>
+<div class="wpf-km"><div><b>297</b><span>Achats sur le site</span></div><div><b>3,93 $</b><span>Coût par achat</span></div><div><b>1,17 K$</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 5"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace156b983b99.28553287_PR5.jpeg" alt="Capture Ads Manager : créative 1 vidéo en scaling, 128 achats à 1,64 $, 210,50 $ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 05</span><span class="wpf-pl">Active</span></div>
+<h3>Créative n°1, vidéo en scaling</h3><p class="ds">Scaling de la vidéo issue de la créative n°1. C'est le meilleur coût par achat des cinq campagnes.</p>
+<div class="wpf-km"><div><b>128</b><span>Achats sur le site</span></div><div><b>1,64 $</b><span>Coût par achat</span></div><div><b>210,50 $</b><span>Budget dépensé</span></div></div></div>
+</article>
 </div>
-<div class="wpf-gal"><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 1"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace15066ba540.94344197_PR1.jpeg" alt="Capture Ads Manager : 579 achats, 1,89 $ par résultat, 1,09 K$ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 2"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace152d57e673.12342565_PR2.jpeg" alt="Capture Ads Manager : campagne Bénin et 4 pays, 267 achats à 2,45 $, 654,91 $ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 3"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace1542175624.84879556_PR3.jpeg" alt="Capture Ads Manager : 576 achats, 1,85 $ par résultat, 1,07 K$ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 4"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace155962da60.74765870_PR4.jpeg" alt="Capture Ads Manager : 297 achats à 3,93 $, 1,17 K$ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 5"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace156b983b99.28553287_PR5.jpeg" alt="Capture Ads Manager : création vidéo en scaling, 128 achats à 1,64 $, 210,50 $ dépensés" loading="lazy"></button></div>
-<div class="wpf-row" style="justify-content:center"><a class="wpf-btn" href="#resultats">Toutes les études de cas</a></div>
+<div class="wpf-ctl"><span class="wpf-ctr">01 / 05</span><div class="wpf-dt"><button type="button" aria-label="Aller à la campagne 1"></button><button type="button" aria-label="Aller à la campagne 2"></button><button type="button" aria-label="Aller à la campagne 3"></button><button type="button" aria-label="Aller à la campagne 4"></button><button type="button" aria-label="Aller à la campagne 5"></button></div><div class="wpf-ar"><button type="button" class="pv" aria-label="Campagne précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button><button type="button" class="nx" aria-label="Campagne suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div></div>
+</div>
+<div class="wpf-row" style="justify-content:center"><a class="wpf-btn" href="#resultats">Voir la page résultats</a></div>
 </div>
 </section>
 
@@ -566,17 +622,44 @@ html{scroll-behavior:smooth;overflow-x:clip}
 <div class="wpf-pg" id="resultats">
 <section class="wpf-sec" style="padding-top:80px">
 <div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag t-trend">Résultats</span><h2 class="wpf-h2">Des campagnes <em>mesurées</em>, des résultats <em>réels</em>.</h2></div>
-<!-- ETUDES DE CAS D'EXEMPLE : chiffres à remplacer par vos vrais résultats -->
-<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, lead generation</div><div class="wpf-cb"><span class="wpf-tag t-target">Lead Generation</span><h3>Prestataire de services</h3><p>Campagne de génération de prospects avec formulaire et relance par message pour remplir l'agenda en continu.</p><div class="wpf-kp"><div><b>1,2$</b><span>coût par lead</span></div><div><b>1 800</b><span>leads en 60 jours</span></div><div><b>35%</b><span>taux de closing</span></div></div></div></div>
-<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, e-commerce</div><div class="wpf-cb"><span class="wpf-tag t-cart">E-commerce</span><h3>Boutique en ligne, mode et beauté</h3><p>Structure de campagnes de conversion et de retargeting pour augmenter les ventes tout en gardant une marge saine.</p><div class="wpf-kp"><div><b>4,2x</b><span>ROAS</span></div><div><b>+320%</b><span>de ventes</span></div><div><b>12 k$</b><span>budget géré</span></div></div></div></div>
-<div class="wpf-case wpf-rv"><div class="wpf-ph">IMAGE : capture Ads Manager, infopreneuriat</div><div class="wpf-cb"><span class="wpf-tag t-book">Infopreneuriat</span><h3>Lancement d'une formation en ligne</h3><p>Campagnes d'inscription au webinaire puis campagnes de vente pour un lancement de formation à forte conversion.</p><div class="wpf-kp"><div><b>250</b><span>ventes au lancement</span></div><div><b>6x</b><span>ROAS</span></div><div><b>45 k$</b><span>de chiffre d'affaires</span></div></div></div></div>
+<div class="wpf-hd"><span class="wpf-tag t-trend">Résultats</span><h2 class="wpf-h2">Des campagnes <em>mesurées</em>, des résultats <em>réels</em>.</h2><p class="wpf-p">Captures du gestionnaire de publicités Meta. Faites glisser pour parcourir les campagnes.</p></div>
+<div class="wpf-ag"><div><b>1 847</b><span>achats générés</span></div><div><b>≈ 4,2 k$</b><span>de budget dépensé</span></div><div><b>≈ 2,27 $</b><span>coût moyen par achat</span></div></div>
+<p class="wpf-nt">Total cumulé des cinq campagnes ci-dessous, d'après les captures du gestionnaire de publicités Meta.</p>
+<div class="wpf-sl">
+<div class="wpf-tr" tabindex="0" aria-label="Captures de campagnes, faites glisser pour parcourir">
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 1"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace15066ba540.94344197_PR1.jpeg" alt="Capture Ads Manager : campagne Stade3, 579 achats, 1,89 $ par résultat, 1,09 K$ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 01</span><span class="wpf-pl">Active</span></div>
+<h3>Campagne Stade3</h3><p class="ds">Campagne de ventes classée « High performing » par Meta : c'est la campagne qui a généré le plus d'achats.</p>
+<div class="wpf-km"><div><b>579</b><span>Achats sur le site</span></div><div><b>1,89 $</b><span>Coût par achat</span></div><div><b>1,09 K$</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 2"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace152d57e673.12342565_PR2.jpeg" alt="Capture Ads Manager : campagne Bénin et 4 pays Broad, 267 achats à 2,45 $, 654,91 $ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 02</span><span class="wpf-pl">Active</span></div>
+<h3>Bénin + 4 pays en ciblage Broad</h3><p class="ds">Test d'une même publicité sur le Bénin et quatre autres pays, avec un ciblage large (Broad).</p>
+<div class="wpf-km"><div><b>267</b><span>Achats sur le site</span></div><div><b>2,45 $</b><span>Coût par achat</span></div><div><b>654,91 $</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 3"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace1542175624.84879556_PR3.jpeg" alt="Capture Ads Manager : test de créatives IA, 576 achats, 1,85 $ par résultat, 1,07 K$ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 03</span><span class="wpf-pl">Active</span></div>
+<h3>Test de créatives avec l'IA</h3><p class="ds">Campagne active qui teste une nouvelle version de créative réalisée avec l'IA.</p>
+<div class="wpf-km"><div><b>576</b><span>Achats sur le site</span></div><div><b>1,85 $</b><span>Coût par achat</span></div><div><b>1,07 K$</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 4"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace155962da60.74765870_PR4.jpeg" alt="Capture Ads Manager : créative 1, 297 achats à 3,93 $, 1,17 K$ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 04</span><span class="wpf-pl off">Désactivée</span></div>
+<h3>Créative n°1</h3><p class="ds">Première créative testée, aujourd'hui désactivée. Elle a servi de base pour la version scalée en vidéo.</p>
+<div class="wpf-km"><div><b>297</b><span>Achats sur le site</span></div><div><b>3,93 $</b><span>Coût par achat</span></div><div><b>1,17 K$</b><span>Budget dépensé</span></div></div></div>
+</article>
+<article class="wpf-sd">
+<button type="button" class="wpf-pf" aria-label="Agrandir la capture de la campagne 5"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace156b983b99.28553287_PR5.jpeg" alt="Capture Ads Manager : créative 1 vidéo en scaling, 128 achats à 1,64 $, 210,50 $ dépensés" loading="lazy" draggable="false"></button>
+<div class="wpf-inf"><div class="top"><span class="wpf-tag t-trend" style="margin:0">Campagne 05</span><span class="wpf-pl">Active</span></div>
+<h3>Créative n°1, vidéo en scaling</h3><p class="ds">Scaling de la vidéo issue de la créative n°1. C'est le meilleur coût par achat des cinq campagnes.</p>
+<div class="wpf-km"><div><b>128</b><span>Achats sur le site</span></div><div><b>1,64 $</b><span>Coût par achat</span></div><div><b>210,50 $</b><span>Budget dépensé</span></div></div></div>
+</article>
 </div>
-</section>
-<section class="wpf-sec">
-<div class="wpf-in">
-<div class="wpf-hd"><span class="wpf-tag t-shield">Preuves</span><h2 class="wpf-h2">Les résultats <em>en capture d'écran</em>.</h2><p class="wpf-p">Des campagnes réelles, directement depuis le gestionnaire de publicités. Cliquez sur une image pour l'agrandir.</p></div>
-<div class="wpf-gal"><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 1"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace15066ba540.94344197_PR1.jpeg" alt="Capture Ads Manager : 579 achats, 1,89 $ par résultat, 1,09 K$ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 2"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace152d57e673.12342565_PR2.jpeg" alt="Capture Ads Manager : campagne Bénin et 4 pays, 267 achats à 2,45 $, 654,91 $ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 3"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace1542175624.84879556_PR3.jpeg" alt="Capture Ads Manager : 576 achats, 1,85 $ par résultat, 1,07 K$ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 4"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace155962da60.74765870_PR4.jpeg" alt="Capture Ads Manager : 297 achats à 3,93 $, 1,17 K$ dépensés" loading="lazy"></button><button type="button" class="wpf-pf wpf-rv" aria-label="Agrandir la capture 5"><img src="https://d1yei2z3i6k35z.cloudfront.net/14172262/6ace156b983b99.28553287_PR5.jpeg" alt="Capture Ads Manager : création vidéo en scaling, 128 achats à 1,64 $, 210,50 $ dépensés" loading="lazy"></button></div>
+<div class="wpf-ctl"><span class="wpf-ctr">01 / 05</span><div class="wpf-dt"><button type="button" aria-label="Aller à la campagne 1"></button><button type="button" aria-label="Aller à la campagne 2"></button><button type="button" aria-label="Aller à la campagne 3"></button><button type="button" aria-label="Aller à la campagne 4"></button><button type="button" aria-label="Aller à la campagne 5"></button></div><div class="wpf-ar"><button type="button" class="pv" aria-label="Campagne précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button><button type="button" class="nx" aria-label="Campagne suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div></div>
+</div>
 </div>
 </section>
 <section class="wpf-sec wpf-gr">
@@ -650,9 +733,25 @@ window.addEventListener('hashchange',go);go();
 var R=document.querySelector('.wpf-root');
 function fit(){R.style.width='';R.style.marginLeft='';var vw=document.documentElement.clientWidth,r=R.getBoundingClientRect();if(vw<=700||r.width>=700){R.style.width=vw+'px';R.style.marginLeft=(-r.left)+'px'}}
 fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
-var L=document.getElementById('wpfL'),LI=L.querySelector('img');
-document.addEventListener('click',function(e){var f=e.target.closest('.wpf-pf');if(f){var i=f.querySelector('img');LI.src=i.src;LI.alt=i.alt;L.classList.add('on');return}if(L.classList.contains('on'))L.classList.remove('on')});
+var L=document.getElementById('wpfL'),LI=L.querySelector('img'),drag=false;
+document.addEventListener('click',function(e){if(drag){drag=false;return}var f=e.target.closest('.wpf-pf');if(f){var i=f.querySelector('img');LI.src=i.src;LI.alt=i.alt;L.classList.add('on');return}if(L.classList.contains('on'))L.classList.remove('on')});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')L.classList.remove('on')});
+document.querySelectorAll('.wpf-sl').forEach(function(sl){
+var tr=sl.querySelector('.wpf-tr'),sd=[].slice.call(tr.children),dots=sl.querySelectorAll('.wpf-dt button'),ct=sl.querySelector('.wpf-ctr'),pv=sl.querySelector('.pv'),nx=sl.querySelector('.nx'),cur=0,raf=0,lock=false,lt=0;
+function pad(n){return (n<10?'0':'')+n}
+function near(){var b=0,d=1e9;sd.forEach(function(x,i){var v=Math.abs(x.offsetLeft-tr.scrollLeft);if(v<d){d=v;b=i}});return b}
+function upd(){if(lock)return;cur=near();rnd()}
+function rnd(){dots.forEach(function(d,i){d.classList.toggle('on',i===cur)});ct.textContent=pad(cur+1)+' / '+pad(sd.length);pv.disabled=cur===0;nx.disabled=cur===sd.length-1}
+function go(i){i=Math.max(0,Math.min(sd.length-1,i));cur=i;lock=true;rnd();tr.scrollTo({left:sd[i].offsetLeft,behavior:'smooth'});clearTimeout(lt);lt=setTimeout(function(){lock=false;upd()},700)}
+tr.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(upd)});
+pv.onclick=function(){go(cur-1)};nx.onclick=function(){go(cur+1)};
+dots.forEach(function(d,i){d.onclick=function(){go(i)}});
+tr.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(cur+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1)}});
+var down=false,sx=0,ss=0;
+tr.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||e.button!==0)return;down=true;sx=e.clientX;ss=tr.scrollLeft});
+window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-sx;if(Math.abs(dx)>5){drag=true;tr.classList.add('drg')}if(drag)tr.scrollLeft=ss-dx});
+window.addEventListener('pointerup',function(){if(!down)return;down=false;tr.classList.remove('drg');if(drag){go(near());setTimeout(function(){drag=false},0)}});
+upd()});
 document.getElementById('wpfB').onclick=function(){M.classList.toggle('open')};
 document.getElementById('wpfSend').onclick=function(){var m='Bonjour, je suis '+document.getElementById('wpfN').value+'. Je cherche : '+document.getElementById('wpfS').value+'. '+document.getElementById('wpfT').value;window.open('https://wa.me/NUMERO?text='+encodeURIComponent(m),'_blank')}
 })();
